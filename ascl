@@ -1,0 +1,46 @@
+#! /bin/csh -f
+#
+
+
+set mode=1
+set dir=$HOME/ASCL
+
+
+if ($mode == 1) then
+  set url=http://asterisk.apod.com/ascl.php
+  set test=$dir/ascl.php
+else if ($mode == 2) then
+  set url=http://asterisk.apod.com/ascl2.php
+  set test=$dir/ascl2.php
+else if ($mode == 3) then
+  set url=http://asterisk.apod.com/ascl_links.php
+  set test=$dir/ascl_links.php
+else
+  exit 1
+endif
+
+if (! -e $test || $1 == new) then
+  echo Working in $test:h
+  cd $test:h
+  set f=$test:t
+  mv $f $f.prev
+  rm -f $test
+  wget $url
+  cmp -s $f $f.prev
+  if ($status) then
+    echo $f was updated since the last fetch
+    echo tkdiff $f $f.prev
+  endif
+  exit 0
+endif
+
+
+if ($#argv == 1) then
+  grep -i $1 $test
+else if ($#argv == 2) then
+  grep -i $1 $test | grep -i $2
+else if ($#argv == 3) then
+  grep -i $1 $test | grep -i $2 | grep -i $3
+else
+  echo Usage:
+endif
