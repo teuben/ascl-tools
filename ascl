@@ -1,6 +1,10 @@
 #! /bin/csh -f
 #
-
+#   a very simple accessor to the ascl online database in order to store
+#   a locally cashed version
+#
+# 1) warn if $dir doesn't exist
+# 2) optionally use curl if wget doesn't exist
 
 set mode=1
 set dir=$HOME/ASCL
@@ -19,13 +23,22 @@ else
   exit 1
 endif
 
+
+
 if (! -e $test || $1 == new) then
   echo Working in $test:h
   cd $test:h
   set f=$test:t
   mv $f $f.prev
   rm -f $test
-  wget $url
+  if (-e /usr/bin/wget) then
+    wget $url
+  else if (-e /usr/bin/curl) then
+    echo curl $url not implemented
+    exit 0
+  else
+    wget $url
+  endif
   cmp -s $f $f.prev
   if ($status) then
     echo $f was updated since the last fetch
@@ -33,6 +46,8 @@ if (! -e $test || $1 == new) then
   endif
   exit 0
 endif
+
+if (
 
 
 if ($#argv == 1) then
