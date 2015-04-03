@@ -1,0 +1,23 @@
+#! /bin/csh -f
+#
+#   a few ways to make that ID/NAME list for python editing.
+# 
+lynx -width=999 -dump -nolist http://ascl.net/code/utility/ascl2 |\
+  awk -F: '{if (NF==2) { print "#",$0} else {print $0} }'                 > ascl2a.txt
+
+awk -F: '{print $1,$2}' ascl2a.txt | awk '{printf("ascl.%s %s\n",$2,$3)}' > ascl2b.txt
+
+
+
+# now produce what we think are the "ascl2.txt" for ascl.py for mass processing
+# these two need to be catenated and inspected
+
+lynx -width=999 -dump -nolist http://ascl.net/code/utility/ascl2 |\
+  awk -F: '{if (NF==3) print $2}' |\
+  awk '{if (NF==2) { printf("ascl:%s %s\n",$1,$2) } else {print "#",$0}}' > ascl2c.txt
+
+lynx -width=999 -dump -nolist http://ascl.net/code/utility/ascl2 |\
+  awk -F: '{if (NF!=3) print $2}' |\
+  awk '{if (NF==2) { printf("ascl:%s %s\n",$1,$2) } else {print "#",$0}}' > ascl2d.txt
+
+
