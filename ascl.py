@@ -4,11 +4,16 @@
 #   is really part of the git module 'teuben/ascl-tools' but placed here
 #   for convenience
 #
+#   @todo:  terminal markers highjlight?
+#           use puncuation to break words?  NO
+#           won't catch "MIRIAD's" - should we search for    KEYWORD's as well
+#
+#   Version:     25-jan-2014 for ADASS2013 proceedings
 
 import sys
 
 debug = False
-punct = ['.', ',', '/', ':', ';', '{', '}']
+punct = ['.', ',', '/', ':', ';', '{', '}', '@', '(', ')', '[', ']', '\\', '\'', '"']
 
 
 def printf(format, *args):
@@ -85,18 +90,34 @@ def parse3(file,codes):
 
 
 def wclean(word):
+    """make clean punctuation-free words
+    """
     w = word.lower()
     len1 = len(punct)
-    for p in punct:
-        if w[0] == p:
-            w = w[1:]
+    # remove iteratively, all punctuation at the start
+    while True:
+        done = True
+        for p in punct:
+            if w[0] == p:
+                w = w[1:]
+                done = False
+                if len(w) == 0:
+                    return w
+                break
+        if done:
             break
     len2 = len(w)
     if len2 == 0:
         return w
-    for p in punct:
-        if w[len2-1] == p:
-            w = w[:-1]
+    # remove iteratively, all punctuation from the end
+    while True:
+        done = True
+        for p in punct:
+            if w[-1:] == p:
+                w = w[:-1]
+                done = False
+                break
+        if done:
             break
     return w
 
@@ -135,5 +156,5 @@ if __name__ == '__main__':
     if False:
         codes = parse1('ascl.php')
     else:
-        codes = parse2('ascl1.txt')
+        codes = parse2('ascl2.txt')
     parse4(file,codes)
