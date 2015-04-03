@@ -1,0 +1,73 @@
+Workflow to add an ASCL index to the ADASS proceedings
+======================================================
+
+Version 2015  (Peter Teuben)
+
+1) in asp2010.sty change the "Object Index" to "ASCL Index" in 4 locations:
+
+% diff asp2010.sty asp2010.sty~
+926c926
+<   \newindex{obj}{odx}{ond}{\Large ASCL Index}
+---
+>   \newindex{obj}{odx}{ond}{\Large Object Index}
+958,959c958,959
+<   \markboth{ASCL Index}{ASCL Index}
+<   \tocentry{\itshape ASCL Index}{}
+---
+>   \markboth{Object Index}{Object Index}
+>   \tocentry{\itshape Object Index}{}
+
+
+2) in aspvolume.tex  activate the printobjectindex
+
+% diff aspvolume.tex aspvolume.tex~
+706c706
+< \printobjectindex   % Print the Object Index by uncommenting this command
+---
+> %\printobjectindex   % Print the Object Index by uncommenting this command
+
+3) create a lookup list of ascl index vs. code names, in some file, ascl2.txt
+it looks as follows (and is generated with a script from the website)
+
+ascl:1109.007 SuperBayeS
+# 1109.008 Multipole Vectors
+ascl:1109.009 CMBquick
+
+
+Note the dubious ones are editing by hand or by code. So manual inspection on 
+this list is needed after is was generated from the ascl toolkit we keep on
+github.
+
+
+4) run the ascl.py command, which will spit out the lines where codes might be
+mentioned:
+
+% ascl.py  Antognini_Jonathan_O7-2.tex
+...
+#   Using MongoDB and Astropy Python library, we implemented a Conesearch service 
+\ooindex{Astropy, ascl:1304.002} 
+...
+
+now you can enter your favorite editor, look for this line and cut and paste the
+ooindex line where appropriate.  This could be automated, but it turns out most
+code names are also english names, so there are too many false positives. It is
+more efficient to look at this output, enter the editor and cut and paste the ones
+that appear right.
+
+
+
+5) the following Makefile target should create a pdf with an author and ASCL index.
+(bibtex stuff that was done before should not change, and is left out of this)
+
+F = aspvolume
+all:
+	pdflatex $(F)
+	pdflatex $(F)
+	makeindex < $(F).adx > $(F).and	
+	makeindex < $(F).odx > $(F).ond
+	pdflatex $(F)
+	pdflatex $(F)
+
+
+
+
