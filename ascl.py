@@ -9,6 +9,9 @@
 #           won't catch "MIRIAD's" - should we search for    KEYWORD's as well
 #
 #   Version:     25-jan-2014 for ADASS2013 proceedings
+#                21-aug-2016 try to find alternate ascl2.txt from the pathname if a local version not present
+
+from __future__ import print_function
 
 import sys
 
@@ -23,7 +26,7 @@ def parse1(file):
     fp = open(file,'r')
     lines = fp.readlines()
     fp.close()
-    print "Found %d lines in %s" % (len(lines),file)
+    print("Found %d lines in %s" % (len(lines),file))
     # look for
     #     <tr><td>ascl:1102.023</td><td>21cmFAST:
     magic = '<tr><td>ascl:'
@@ -40,10 +43,10 @@ def parse1(file):
             code_words = code.split()
             codes[code] = id
             if len(code_words) > 1:
-                print '# ascl:'+id,code
+                print('# ascl:'+id,code)
             else:
-                print 'ascl:'+id,code
-    print 'Found %d code entries' % len(codes)
+                print('ascl:'+id,code)
+    print('Found %d code entries' % len(codes))
     return codes
 
 def parse2(file):
@@ -69,24 +72,24 @@ def parse3(file,codes):
     fp = open(file,'r')
     lines = fp.readlines()
     fp.close()
-    if debug: print codes
+    if debug: print(codes)
     for line in lines:
-        print 'LINE: ',line
+        print('LINE: ',line)
         line2 = ''
         has_a_code = False
         words = line.split(' ,')
         for word in words:
-            print 'WORD: ',word
+            print('WORD: ',word)
             if codes.has_key(word):
                 has_a_code = True
                 line2 = line2 + "%s\\ooindex{%s, %s} " % (word,word,codes[word])
             else:
                 line2 = line2 + word + " "
         if has_a_code:
-            print "# " + line
-            print line2
+            print("# " + line)
+            print(line2)
         else:
-            print line
+            print(line)
 
 
 def wclean(word):
@@ -129,32 +132,34 @@ def parse4(file,codes):
     fp = open(file,'r')
     lines = fp.readlines()
     fp.close()
-    if debug: print codes
+    if debug: print(codes)
     for line in lines:
-        if debug: print 'LINE: ',line
+        if debug: print('LINE: '+line)
         line2 = ''
         has_a_code = False
         words = line.split()
         for dword in words:
             word = wclean(dword)
-            if debug: print 'WORD: ',dword,word
+            if debug: print('WORD: ',dword,word)
             if codes.has_key(word):
                 has_a_code = True
                 line2 = line2 +  "%s \n" % (codes[word])
         if has_a_code:
-            print "# " + line
-            print line2
+            print("# " + line)
+            print(line2)
         else:
-            if debug: print line
+            if debug: print(line)
 
 
 #parse3('sample.tex',codes)
 
 if __name__ == '__main__':
-    file = sys.argv[1]
-    #
-    if False:
-        codes = parse1('ascl.php')
-    else:
-        codes = parse2('ascl2.txt')
-    parse4(file,codes)
+    print("CMD: ",sys.argv[0])
+    if len(sys.argv) > 1:
+        file = sys.argv[1]
+        #
+        if False:
+            codes = parse1('ascl.php')
+        else:
+            codes = parse2('ascl2.txt')
+        parse4(file,codes)
