@@ -1,0 +1,11 @@
+#! /bin/csh -f
+#
+
+
+foreach file ($*)
+  echo $file
+  set f1=$file:t
+  set f2=$f1:r
+  set txt=$f2.txt
+  pdftotext $file $txt
+end
