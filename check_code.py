@@ -9,7 +9,7 @@
 #from __future__ import division  # Python 2 users only
 #from __future__ import print_function
 import sys, os
-
+import codecs
 import nltk, re, pprint
 
 #from nltk import word_tokenize
@@ -21,7 +21,7 @@ my1 = ['compile','install','http','ftp','code','package','library','github','sou
 
 def try1(txtfile):
     #f = open('1408.6846v1.txt')
-    f = open(txtfile)
+    f = codecs.open(txtfile, encoding='utf-8')
     raw = f.read()
     #
     tokens = nltk.word_tokenize(raw)
