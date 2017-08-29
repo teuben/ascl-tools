@@ -15,7 +15,17 @@ import nltk, re, pprint
 #from nltk import word_tokenize
 #from nltk import FreqDist
 
-my1 = ['compile','install','http','ftp','code','package','library','github','sourceforge','download','link','file','table','image','fits','fortran','c++','python','software','algorithm','program']
+my1 = ['compile','install',
+       'http','ftp','url',
+       'code','package','library','github','sourceforge','download','link','file','table','image',
+       'fits','hdf',
+       'fortran','c++','python',
+       'software','algorithm','program','routine','recipe','procedure','script',
+       'numeric','model','pipeline',
+       'IDL','CASA','IRAF','AIPS','MIRIAD','GIPSY','NEMO','ASCL']
+
+
+
 
 
 
