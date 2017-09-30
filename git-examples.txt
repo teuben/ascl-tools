@@ -1,0 +1,42 @@
+Here's a scenario where you (user1) have a git repo on github (repo1),
+and want to merge your code into another git repo (repo2) that belongs
+to another person (user2). I'm assuming we're going to do this on/via
+github (GH) but procedures on other cloud services should match
+closely.
+
+As far as I know, you cannot retain the history of your repo1 into repo2,
+but pending that, here is the procedure to merge repo1 into repo2:
+
+1. Fork the other repo (repo2) into your GH space. This is easiest done on
+   github.com, though there are command line versions of this as well.
+   (this would cover steps 1-2)
+2. Clone the repo (repo2) from your GH space to your laptop
+          git clone https:/github.com/user1/repo2
+	  cd repo2
+3. Create a branch (branch1) and switch to it
+   	  git -b branch1
+	  git checkout branch1
+4. Copy the files you want to merge from your local copy in repo1 into
+   this repo2, add them, and commit them. then push it back to GH
+   	  cp ../repo1/file1 .
+	  git add file1
+	  git commit file1
+	  git push
+   (this last command needs a first time syntax change, since the branch
+    does not exist yet in your GH's repo2)
+5. Now go on your GH's repo2 and change to this branch and issue a pull request
+   from this branch to the upstream (user2)
+   We normally call your own GH repo2 the "origin", and will designate the
+   parent repo2 as the "upstream", so we can later merge new contributions
+   made to upstreams repo2 into ours.
+   On your laptop you can find out with
+      	  git remote
+   and add the upstream using
+          git add remote upstream https://github.com/name2/repo2
+   The commands
+          git checkout master
+          git fetch upstream
+	  git pull upstream/master
+   will now sync the upstream master into your master, so you are back in
+   sync.  Your branch could be discarded, or you can later continue to work
+   on it for pull requests back to the upstream.
