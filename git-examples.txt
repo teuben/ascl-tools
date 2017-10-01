@@ -4,33 +4,43 @@ to another person (user2). I'm assuming we're going to do this on/via
 github (GH) but procedures on other cloud services should match
 closely.
 
+We use the concept called "a pull request from a branch", unless user2
+has given you direct access to their repo2 of course.  The procedure
+below allows you to bypass this special access and prepare your own
+cloned version of repo2 with your repo1 code.
+
 As far as I know, you cannot retain the history of your repo1 into
 repo2, but pending a final word on that, here is the procedure to
 merge user1/repo1 into user2/repo2:
 
-1. Fork the other repo (user2/repo2) into your GH space. This is easiest done on
-   github.com, though there are command line versions of this as well.
-   (this would cover steps 1-2)
+1. Fork the other repo (user2/repo2) into your GH (as user1/repo2) space.
+   This is easiest done on github.com, though there are command line
+   versions of this as well.  (this would cover steps 1-2)
+
 2. Clone the repo (repo2) from your GH space to your laptop
           git clone https:/github.com/user1/repo2
 	  cd repo2
+
 3. Create a branch (branch1) and switch to it
    	  git branch branch1
 	  git checkout branch1
+
 4. Copy the files you want to merge from your local copy in repo1 into
    this repo2, add them, and commit them. then push it back to GH
-   	  cp ../repo1/file1 .
+   	  cp -i ../repo1/file1 .
 	  git add file1
 	  git commit file1
 	  git push -u origin branch1
    (this push needs a first time syntax change, since that branch
     does not exist yet in your GH's repo2; after this it's just "git push")
+
 5. Now go on your GH's repo2 and change to this branch and issue a pull request
    from this branch to the upstream (user2)
    We normally call your own GH repo2 the "origin", and will designate the
    parent repo2 as the "upstream", so we can later merge new contributions
-   made to upstreams repo2 into ours.
-   On your laptop you can find out your remotes with
+   made to upstreams repo2 into ours. See next and final step.
+
+6. On your laptop you can find out your remotes with
       	  git remote
    and add this new "upstream" remote using
           git add remote upstream https://github.com/name2/repo2
@@ -45,3 +55,12 @@ merge user1/repo1 into user2/repo2:
    on it for pull requests back to the upstream.  If you continue with branch1,
    make sure that branch is in sync with your master, otherwise your pull request
    is going to look very strange.
+
+7. Optionally, on your branch you could merge in the changes that are now on
+   your master. This way you can next time continue to call pull requests
+   from this branch. Or delete the branch and use a new branch. Up to you.
+
+          git checkout branch1
+	  git merge master
+	  
+   
