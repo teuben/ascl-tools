@@ -64,3 +64,8 @@ merge user1/repo1 into user2/repo2:
 	  git merge master
 	  
    
+
+NOTE added:
+   Several pages describe how to merge two repos, and not loose file history.
+   https://saintgimp.org/2013/01/22/merging-two-git-repositories-into-one-repository-without-losing-file-history/
+   https://stackoverflow.com/questions/1425892/how-do-you-merge-two-git-repositories
