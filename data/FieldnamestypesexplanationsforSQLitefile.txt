@@ -1,0 +1,11 @@
+Field		Type and Explanation
+
+Paper ID	Text; the article ID assigned by A&A
+Rank		Real; a number assigned by researchers to each record, used to order the dataset in some phases of the research
+Code name...	Text; information about the software: its name, or text about it, or an ASCL ID, or other info to identify this as a software method
+Reference for..	Text; a reference given in a paper for the software, or a URL or other information used to find the software
+URL		Bool; Yes if there is a URL in the Reference for... field; otherwise, blank or No
+Category	Text; category assigned by researchers as to whether software is available for download; see paper for explanations of categories
+Notes		Text; notes on the entry
+Named code	Bool; used to identify named codes for certain phases of the research; may be No even if code has a name
+ASCL		Bool; Yes if there is an ASCL ID in the Reference for... field
