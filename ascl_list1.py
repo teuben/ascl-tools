@@ -14,23 +14,36 @@
 #
 import json
 import sys
+import argparse
 
-mode = 2
 
-f1 = open('code.json')
+#parses arguments for directories, mode, and match ID
+parser = argparse.ArgumentParser()
+parser.add_argument('--codedir', type = str, default = '../code-nasa-gov/code.json', help = "input directory for code.json")
+parser.add_argument("--catalogdir", type = str, default = '../code-nasa-gov/data/catalog.json', help = "input directory for data/catalog.json")
+parser.add_argument("--mode", type = int, default = 2)
+parser.add_argument("--matchid", type = str, default = None)
+
+args = parser.parse_args()
+
+#print(args)
+
+
+mode = args.mode
+
+f1 = open(args.codedir)
 d1 = json.load(f1)
 
-f2 = open('data/catalog.json')
+f2 = open(args.catalogdir)
 d2 = json.load(f2)
     
+match_id = args.matchid
 
 # dict_keys(['version', 'agency', 'measurementType', 'releases'])
 
-if len(sys.argv) > 1:
-    match_id = sys.argv[1]
-else:
-    match_id = None
-
+#if mode is 1 and match id is supplied, this will print the json 
+#dumps of the matching identifier
+#Otherwise, will print the identifier and name
 
 if mode == 1:    
     r = d1['releases']
@@ -52,6 +65,8 @@ if mode == 1:
         else:
             for t in tags:
                 print(t)
+
+#incomplete mode 2, needs more exploratory work 
 elif mode == 2:
     for i in range(len(d2)):
         r = d2[i]
