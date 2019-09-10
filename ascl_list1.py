@@ -1,12 +1,17 @@
 #! /usr/bin/env python
 #
+#   Parser for code.nasa.gov json file
+#
 #   nov 2018:    1008 code    entries (68 have NONE identifier), 229 unique tags,
 #                 454 catalog entries
+#   sep 2019:    541/532 codes (312 have NONE)
 #
-#   Intended use:
+#   Example use:
+#   ./ascl_list1.py -h               List help
+#   ./ascl_list1.py                  lists all "ID" and "NAME" pairs for mode=1 (code.json)
+#   ./ascl_list1.py --mode 2         lists all "NAME" for mode=2 (data/catalog.json)
 #
-#   ascl_list1.py                    lists all "ID" and "NAME" pairs
-#   ascl_list1.py ID                 dumps the wole JSON
+#   
 #
 #
 #   The json looks roughly as follows:
@@ -17,12 +22,12 @@ import sys
 import argparse
 
 
-#parses arguments for directories, mode, and match ID
+# parses arguments for directories, mode, and match ID
 parser = argparse.ArgumentParser()
-parser.add_argument('--codedir', type = str, default = '../code-nasa-gov/code.json', help = "input directory for code.json")
-parser.add_argument("--catalogdir", type = str, default = '../code-nasa-gov/data/catalog.json', help = "input directory for data/catalog.json")
-parser.add_argument("--mode", type = int, default = 2)
-parser.add_argument("--matchid", type = str, default = None)
+parser.add_argument('--codedir',    type = str, default = '../code-nasa-gov', help = "input directory for code-nasa-gov")
+parser.add_argument("--mode",       type = int, default = 2,                  help = "1 (code) 2 (data/catalog)")
+parser.add_argument("--matchid",    type = str, default = None,               help = "print json for that ID")
+parser.add_argument("--matchname",  type = str, default = None,               help = "print json for that NAME")
 
 args = parser.parse_args()
 
@@ -31,15 +36,16 @@ args = parser.parse_args()
 
 mode = args.mode
 
-f1 = open(args.codedir)
+f1 = open(args.codedir + '/code.json')
 d1 = json.load(f1)
 
-f2 = open(args.catalogdir)
+f2 = open(args.codedir + '/data/catalog.json')
 d2 = json.load(f2)
     
 match_id = args.matchid
 
-# dict_keys(['version', 'agency', 'measurementType', 'releases'])
+# d1: dict_keys(['version', 'agency', 'measurementType', 'releases'])
+# d2: a list
 
 #if mode is 1 and match id is supplied, this will print the json 
 #dumps of the matching identifier
