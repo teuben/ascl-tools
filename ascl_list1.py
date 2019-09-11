@@ -25,16 +25,19 @@ import argparse
 # parses arguments for directories, mode, and match ID
 parser = argparse.ArgumentParser()
 parser.add_argument('--codedir',    type = str, default = '../code-nasa-gov', help = "input directory for code-nasa-gov")
-parser.add_argument("--mode",       type = int, default = 2,                  help = "1 (code) 2 (data/catalog)")
-parser.add_argument("--matchid",    type = str, default = None,               help = "print json for that ID")
-parser.add_argument("--matchname",  type = str, default = None,               help = "print json for that NAME")
+parser.add_argument("--mode",       type = int, default = 1,                  help = "1 (code) 2 (data/catalog)")
+parser.add_argument("--matchid",    type = str, default = None,               help = "print json for exact match ID (mode 1 only)")
+parser.add_argument("--matchname",  type = str, default = None,               help = "print json for matching NAME")
+parser.add_argument("--matchdesc",  type = str, default = None,               help = "print json for matching DESCRIPTION")
 
 args = parser.parse_args()
 
-#print(args)
 
+mode       = args.mode
+match_id   = args.matchid
+match_name = args.matchname
+match_desc = args.matchdesc
 
-mode = args.mode
 
 f1 = open(args.codedir + '/code.json')
 d1 = json.load(f1)
@@ -42,10 +45,10 @@ d1 = json.load(f1)
 f2 = open(args.codedir + '/data/catalog.json')
 d2 = json.load(f2)
     
-match_id = args.matchid
-
-# d1: dict_keys(['version', 'agency', 'measurementType', 'releases'])
-# d2: a list
+# d1: dict_keys(['version', 'agency', 'measurementType', 'releases'])  where d1['releases'] is a list of dict:
+#     ['repositoryURL','name','tags','contact','laborHours','date','organization','permissions','identifier','description']
+# d2: a list of dict
+#     ['Update_Date','Public Code Repo','Description','License','NASA Center','External Link','Contributors','Labor_Hours','Software','Categories','Categories_NLP']
 
 #if mode is 1 and match id is supplied, this will print the json 
 #dumps of the matching identifier
@@ -57,26 +60,43 @@ if mode == 1:
     for ri in r:
         name = ri['name']
         tags = ri['tags']
+        desc = ri['description']
         if True:
             if 'identifier' in ri.keys():
                 iden = ri['identifier']
             else:
                 iden = "NONE"
-            if match_id == None:
-                print("%s %s" % (iden,name))
+            if match_desc != None:
+                if desc.find(match_desc) < 0: continue
+                jstr = json.dumps(ri,indent=4)
+                print(jstr)
+                break
             elif match_id == iden:
                 jstr = json.dumps(ri,indent=4)
                 print(jstr)
                 break
+            else:
+                print("%s %s" % (iden,name))
+            
         else:
             for t in tags:
                 print(t)
-
-#incomplete mode 2, needs more exploratory work 
 elif mode == 2:
     for i in range(len(d2)):
-        r = d2[i]
-        if match_id == None:
-            print("%s" % (r['Software']))
+        ri = d2[i]
+        name = ri['Software']
+        desc = ri['Description']
+        if match_name != None:
+            if name.find(match_name) < 0: continue
+            jstr = json.dumps(ri,indent=4)
+            print(jstr)
+            break
+        elif match_desc != None:
+            if desc.find(match_desc) < 0: continue
+            jstr = json.dumps(ri,indent=4)
+            print(jstr)
+            break
+        else:
+            print("%s" % (ri['Software']))
 else:
     sys.exit(1)
