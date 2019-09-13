@@ -120,7 +120,7 @@ elif mode == 2:
                 
     elif args.list:
         output_str = "Ordinal,Status,Software,Description,Public Code Repo,External Link,Contributers\n"
-
+        print( output_str )
         for i in range(len(d2)): 
             ri = d2[i]
 
@@ -133,10 +133,9 @@ elif mode == 2:
             el      = "\"" + ri["External Link"]        + "\""  
             cont    = "\"" + s.join(ri["Contributors"]) + "\"" 
            
-            output_str += s2.join([str(i), str(0), soft, desc, pcr, el, cont]) + "\n\n"
+            output_str = s2.join([str(i), str(0), soft, desc, pcr, el, cont]) + "\n\n"
+            print(output_str.encode("utf8"))
         
-        print( output_str )
-            
     else:
         if match_name != None:
             for i in range(len(d2)): 
