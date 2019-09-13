@@ -24,19 +24,20 @@ import argparse
 
 # parses arguments for directories, mode, and match ID
 parser = argparse.ArgumentParser()
+parser.add_argument('-tags',        action='store_true') 
 parser.add_argument('--codedir',    type = str, default = '../code-nasa-gov', help = "input directory for code-nasa-gov")
 parser.add_argument("--mode",       type = int, default = 1,                  help = "1 (code) 2 (data/catalog)")
-parser.add_argument("--matchid",    type = str, default = None,               help = "print json for exact match ID (mode 1 only)")
 parser.add_argument("--matchname",  type = str, default = None,               help = "print json for matching NAME")
 parser.add_argument("--matchdesc",  type = str, default = None,               help = "print json for matching DESCRIPTION")
+parser.add_argument("--matchid",    type = str, default = None,               help = "print json for exact match ID (mode 1 only)")
 
 args = parser.parse_args()
 
 
 mode       = args.mode
-match_id   = args.matchid
 match_name = args.matchname
 match_desc = args.matchdesc
+match_id   = args.matchid
 
 
 f1 = open(args.codedir + '/code.json')
@@ -54,6 +55,7 @@ d2 = json.load(f2)
 #dumps of the matching identifier
 #Otherwise, will print the identifier and name
 
+
 if mode == 1:    
     r = d1['releases']
     nr = len(r)
@@ -61,42 +63,59 @@ if mode == 1:
         name = ri['name']
         tags = ri['tags']
         desc = ri['description']
-        if True:
+        if not args.tags:
             if 'identifier' in ri.keys():
                 iden = ri['identifier']
             else:
                 iden = "NONE"
-            if match_desc != None:
-                if desc.find(match_desc) < 0: continue
+
+            if match_name != None:
+                if name.find(match_name) < 0: continue
                 jstr = json.dumps(ri,indent=4)
                 print(jstr)
                 break
+
+            elif match_desc != None:
+                if desc.find(match_desc) < 0: continue
+                jstr = json.dumps(ri,indent=4)
+                print(jstr)
+
             elif match_id == iden:
                 jstr = json.dumps(ri,indent=4)
                 print(jstr)
                 break
+
             else:
                 print("%s %s" % (iden,name))
-            
         else:
             for t in tags:
                 print(t)
+
 elif mode == 2:
     for i in range(len(d2)):
         ri = d2[i]
         name = ri['Software']
         desc = ri['Description']
-        if match_name != None:
-            if name.find(match_name) < 0: continue
-            jstr = json.dumps(ri,indent=4)
-            print(jstr)
-            break
-        elif match_desc != None:
-            if desc.find(match_desc) < 0: continue
-            jstr = json.dumps(ri,indent=4)
-            print(jstr)
-            break
+        cat  = ri['Categories']
+        
+        if not args.tags:
+            if match_name != None:
+                if name.find(match_name) < 0: continue
+                jstr = json.dumps(ri,indent=4)
+                print(jstr)
+                break
+            
+            elif match_desc != None:
+                if desc.find(match_desc) < 0: continue
+                jstr = json.dumps(ri,indent=4)
+                print(jstr)
+            
+            else:
+                print("%s" % (ri['Software']))
         else:
-            print("%s" % (ri['Software']))
+            for c in cat:
+                print(c)
+
+
 else:
     sys.exit(1)
