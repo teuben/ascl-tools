@@ -24,11 +24,13 @@ import argparse
 
 # parses arguments for directories, mode, and match ID
 parser = argparse.ArgumentParser()
-parser.add_argument('--codedir',    type = str, default = '../code-nasa-gov', help = "input directory for code-nasa-gov")
-parser.add_argument("--mode",       type = int, default = 1,                  help = "1 (code) 2 (data/catalog)")
-parser.add_argument("--matchid",    type = str, default = None,               help = "print json for exact match ID (mode 1 only)")
-parser.add_argument("--matchname",  type = str, default = None,               help = "print json for matching NAME")
-parser.add_argument("--matchdesc",  type = str, default = None,               help = "print json for matching DESCRIPTION")
+parser.add_argument('--codedir',    type = str, default = '../code-nasa-gov',  help = "input directory for code-nasa-gov")
+parser.add_argument('--code',       type = str, default = 'code.json',         help = "input json for --mode 1")
+parser.add_argument('--catalog',    type = str, default = 'data/catalog.json', help = "input json for --mode 2")
+parser.add_argument("--mode",       type = int, default = 1,                   help = "1 (code) 2 (data/catalog)")
+parser.add_argument("--matchid",    type = str, default = None,                help = "print json for exact match ID (mode 1 only)")
+parser.add_argument("--matchname",  type = str, default = None,                help = "print json for matching NAME")
+parser.add_argument("--matchdesc",  type = str, default = None,                help = "print json for matching DESCRIPTION")
 
 args = parser.parse_args()
 
@@ -39,10 +41,10 @@ match_name = args.matchname
 match_desc = args.matchdesc
 
 
-f1 = open(args.codedir + '/code.json')
+f1 = open(args.codedir + '/' + args.code)
 d1 = json.load(f1)
 
-f2 = open(args.codedir + '/data/catalog.json')
+f2 = open(args.codedir + '/' + args.catalog)
 d2 = json.load(f2)
     
 # d1: dict_keys(['version', 'agency', 'measurementType', 'releases'])  where d1['releases'] is a list of dict:
