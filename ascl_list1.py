@@ -26,7 +26,9 @@ import argparse
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('-tags',        action='store_true')
+parser.add_argument('--list',       action='store_true')
+parser.add_argument('--tags',       action='store_true')
+
 parser.add_argument('--codedir',    type = str, default = '../code-nasa-gov',  help = "input directory for code-nasa-gov")
 parser.add_argument('--code',       type = str, default = 'code.json',         help = "input json for --mode 1")
 parser.add_argument('--catalog',    type = str, default = 'data/catalog.json', help = "input json for --mode 2")
@@ -43,11 +45,7 @@ match_desc = args.matchdesc
 match_id   = args.matchid
 
 
-f1 = open(args.codedir + '/' + args.code)
-d1 = json.load(f1)
 
-f2 = open(args.codedir + '/' + args.catalog)
-d2 = json.load(f2)
     
 # d1: dict_keys(['version', 'agency', 'measurementType', 'releases'])  where d1['releases'] is a list of dict:
 #     ['repositoryURL','name','tags','contact','laborHours','date','organization','permissions','identifier','description']
@@ -60,65 +58,108 @@ d2 = json.load(f2)
 
 
 if mode == 1:    
+    
+    f1 = open(args.codedir + '/' + args.code)
+    d1 = json.load(f1)
+    
     r = d1['releases']
-    nr = len(r)
-    for ri in r:
-        name = ri['name']
-        tags = ri['tags']
-        desc = ri['description']
-        if not args.tags:
-            if 'identifier' in ri.keys():
-                iden = ri['identifier']
-            else:
-                iden = "NONE"
+    
+    if args.tags:
+        for i in range(len(r)):
+            ri  = r[i]
+            tags= ri['tags']
 
-            if match_name != None:
-                if name.find(match_name) < 0: continue
-                jstr = json.dumps(ri,indent=4)
-                print(jstr)
-                break
-
-            elif match_desc != None:
-                if desc.find(match_desc) < 0: continue
-                jstr = json.dumps(ri,indent=4)
-                print(jstr)
-
-            elif match_id == iden:
-                jstr = json.dumps(ri,indent=4)
-                print(jstr)
-                break
-
-            else:
-                print("%s %s" % (iden,name))
-        else:
             for t in tags:
                 print(t)
 
-elif mode == 2:
-    for i in range(len(d2)):
-        ri = d2[i]
-        name = ri['Software']
-        desc = ri['Description']
-        cat  = ri['Categories']
-        
-        if not args.tags:
-            if match_name != None:
-                if name.find(match_name) < 0: continue
-                jstr = json.dumps(ri,indent=4)
-                print(jstr)
-                break
-            
-            elif match_desc != None:
-                if desc.find(match_desc) < 0: continue
-                jstr = json.dumps(ri,indent=4)
-                print(jstr)
-            
-            else:
-                print("%s" % (ri['Software']))
+    else:
+
+        if match_name != None:
+            for i in range(len(r)):
+                ri  = r[i]
+                name = ri['name']
+                if name.find(match_name) >= 0:
+                    jstr = json.dumps(ri,indent=4)
+                    print(jstr)
+
+        elif match_desc != None:
+            for i in range(len(r)):
+                ri  = r[i]
+                desc = ri['description']
+                if desc.find(match_desc) >= 0: 
+                    jstr = json.dumps(ri,indent=4)
+                    print(jstr)
+
+        elif match_id != None:
+            for i in range(len(r)):
+                ri = r[i]
+                iden = ri['identifier'] if 'identifier' in ri.keys() else "NONE"
+
+                if match_id == iden:
+                    jstr = json.dumps(ri,indent=4)
+                    print(jstr)
+
         else:
+            for i in range(len(r)):
+                ri = r[i]
+                iden = ri['identifier'] if 'identifier' in ri.keys() else "NONE"
+                name = ri['name']
+                print("%s %s" % (iden,name))
+
+elif mode == 2:
+    f2 = open(args.codedir + '/' + args.catalog, )
+    d2 = json.load(f2)
+    
+    if args.tags:
+        for i in range(len(d2)):
+            ri = d2[i] 
+            cat     = ri['Categories']
+
             for c in cat:
                 print(c)
+                
+    elif args.list:
+        output_str = "Ordinal,Status,Software,Description,Public Code Repo,External Link,Contributers\n"
 
+        for i in range(len(d2)): 
+            ri = d2[i]
+
+            s       = ", "
+            s2      = "," 
+
+            soft    = "\"" + ri['Software']             + "\""  
+            desc    = "\"" + ri['Description']          + "\""  
+            pcr     = "\"" + ri["Public Code Repo"]     + "\""  
+            el      = "\"" + ri["External Link"]        + "\""  
+            cont    = "\"" + s.join(ri["Contributors"]) + "\"" 
+           
+            output_str += s2.join([str(i), str(0), soft, desc, pcr, el, cont]) + "\n\n"
+        
+        print( output_str )
+            
+    else:
+        if match_name != None:
+            for i in range(len(d2)): 
+                ri = d2[i]
+                soft    = ri['Software']
+
+                if soft.find(match_name) >= 0:
+                    jstr = json.dumps(ri,indent=4)
+                    print(jstr)
+        
+        elif match_desc != None:
+            for i in range(len(d2)):
+                ri = d2[i]
+                desc    = ri['Description']
+                
+                if desc.find(match_desc) >= 0:
+                    jstr = json.dumps(ri,indent=4)
+                    print(jstr)
+            
+        else:
+            for i in range(len(d2)): 
+                ri = d2[i]
+                print("%s" % (ri['Software']))
 
 else:
     sys.exit(1)
