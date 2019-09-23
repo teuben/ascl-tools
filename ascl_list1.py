@@ -20,7 +20,7 @@
 import json
 import sys
 import argparse
-
+import hashlib
 
 # parses arguments for directories, mode, and match ID
 
@@ -71,7 +71,7 @@ if args.list:
         f1 = open(args.codedir + '/' + args.catalog)
         d1 = json.load(f1)
 
-        output_str = "Ordinal,Status,Software,Description,Public Code Repo,External Link,Contributors"
+        output_str = "Ordinal,Hash,Status,Software,Description,Public Code Repo,External Link,Contributors"
         print( output_str )
         for i in range(len(d1)): 
             ri = d1[i]
@@ -93,6 +93,9 @@ if args.list:
         d1 = json.load(f1)
         r = d1["releases"]
         for i in range(len(r)):
+            
+            m = hashlib.md5()
+            
             ri = r[i]
            
             s       = ", "
@@ -103,8 +106,9 @@ if args.list:
             desc    = "\"" + ri['description']          + "\""  
             pcr     = "\"" + ri["repositoryURL"]        + "\""  
             cont    = "\"" + ri["contact"].get("email")      + "\"" 
-           
-            output_str = s2.join([str(i), str(0), soft, desc, pcr, el, cont]) 
+            m = hashlib.md5(bytes((el+soft+desc+pcr+cont))).hexdigest()
+
+            output_str = s2.join([str(i), m, str(0), soft, desc, pcr, el, cont]) 
             print(output_str.encode("utf8"))
             
 
