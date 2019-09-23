@@ -106,7 +106,7 @@ if args.list:
             desc    = "\"" + ri['description']          + "\""  
             pcr     = "\"" + ri["repositoryURL"]        + "\""  
             cont    = "\"" + ri["contact"].get("email")      + "\"" 
-            m = hashlib.md5(bytes((el+soft+desc+pcr+cont))).hexdigest()
+            m = hashlib.md5(bytes((el+soft+desc+pcr+cont).encode("utf8"))).hexdigest()
 
             output_str = s2.join([str(i), m, str(0), soft, desc, pcr, el, cont]) 
             print(output_str.encode("utf8"))
