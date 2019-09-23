@@ -91,6 +91,8 @@ if args.list:
     elif mode == 1:
         f1 = open(args.codedir + '/' + args.code)
         d1 = json.load(f1)
+        output_str = "Ordinal,Hash,Status,Software,Description,Public Code Repo,External Link,Contributors"
+        print( output_str )
         r = d1["releases"]
         for i in range(len(r)):
             
