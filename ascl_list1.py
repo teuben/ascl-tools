@@ -66,11 +66,55 @@ match_field = args.matchfield
 #
 
 
+if args.list:
+    if mode == 2:
+        f1 = open(args.codedir + '/' + args.catalog)
+        d1 = json.load(f1)
+
+        output_str = "Ordinal,Status,Software,Description,Public Code Repo,External Link,Contributors"
+        print( output_str )
+        for i in range(len(d1)): 
+            ri = d1[i]
+
+            s       = ", "
+            s2      = "," 
+
+            soft    = "\"" + ri['Software']             + "\""  
+            desc    = "\"" + ri['Description']          + "\""  
+            pcr     = "\"" + ri["Public Code Repo"]     + "\""  
+            el      = "\"" + ri["External Link"]        + "\""  
+            cont    = "\"" + s.join(ri["Contributors"]) + "\"" 
+           
+            output_str = s2.join([str(i), str(0), soft, desc, pcr, el, cont]) 
+            print(output_str.encode("utf8"))
+    
+    elif mode == 1:
+        f1 = open(args.codedir + '/' + args.code)
+        d1 = json.load(f1)
+        r = d1["releases"]
+        for i in range(len(r)):
+            ri = r[i]
+           
+            s       = ", "
+            s2      = "," 
+            
+            el = ("\"" + ri.get("homepageURL") + "\"") if ri.get("homepageURL") != None else ("\"" + "None" + "\"")
+            soft    = "\"" + ri['name']                 + "\""  
+            desc    = "\"" + ri['description']          + "\""  
+            pcr     = "\"" + ri["repositoryURL"]        + "\""  
+            cont    = "\"" + ri["contact"].get("email")      + "\"" 
+           
+            output_str = s2.join([str(i), str(0), soft, desc, pcr, el, cont]) 
+            print(output_str.encode("utf8"))
+            
+
+
+
 #if mode is 1 and match id is supplied, this will print the json 
 #dumps of the matching identifier
 #Otherwise, will print the identifier and name
 
-if mode == 1:    
+elif mode == 1:    
     
     f1 = open(args.codedir + '/' + args.code)
     d1 = json.load(f1)
@@ -132,25 +176,9 @@ elif mode == 2:
             for c in cat:
                 print(c)
 
-    #prints out the repo in csv formatting            
-    elif args.list:
-        output_str = "Ordinal,Status,Software,Description,Public Code Repo,External Link,Contributers"
-        print( output_str )
-        for i in range(len(d2)): 
-            ri = d2[i]
+    #prints out the repo in csv formatting  
 
-            s       = ", "
-            s2      = "," 
 
-            soft    = "\"" + ri['Software']             + "\""  
-            desc    = "\"" + ri['Description']          + "\""  
-            pcr     = "\"" + ri["Public Code Repo"]     + "\""  
-            el      = "\"" + ri["External Link"]        + "\""  
-            cont    = "\"" + s.join(ri["Contributors"]) + "\"" 
-           
-            output_str = s2.join([str(i), str(0), soft, desc, pcr, el, cont]) 
-            print(output_str.encode("utf8"))
-        
     else:
         #if match name is provided, print out all the dumps for matching names
         if match_name != None:
@@ -194,7 +222,7 @@ elif mode == 3:
 #   'permissions'           'License',                      lic -both
 #   'identifier'            ---------------                 id
 #   'description'           'Description',                  desc
-#
+#   'homepageURL'           'External Link'                 ext
   
     fields = {
         "repo": ["repositoryURL",   "Public Code Repo"],
@@ -205,8 +233,9 @@ elif mode == 3:
         "date": ["date",            "Update_Date"],
         "org":  ["organization",    "NASA Center"],
         "lic":  ["permissions",     "License"],
-        "id":["identifier",  ""],
+        "id":   ["identifier",  ""],
         "desc": ["description",     "Description"],
+        "ext":  ["homepageURL", "External Link"]
     } 
     
     if match_field and match_name:
