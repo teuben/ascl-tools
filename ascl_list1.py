@@ -79,11 +79,11 @@ if args.list:
             s       = ", "
             s2      = "," 
 
-            soft    = "\"" + ri['Software']             + "\""  
-            desc    = "\"" + ri['Description']          + "\""  
-            pcr     = "\"" + ri["Public Code Repo"]     + "\""  
-            el      = "\"" + ri["External Link"]        + "\""  
-            cont    = "\"" + s.join(ri["Contributors"]) + "\"" 
+            soft    = "\"" + ri['Software']                         + "\""  
+            desc    = "\"" + ri['Description'].replace('"', "'")    + "\""  
+            pcr     = "\"" + ri["Public Code Repo"]                 + "\""  
+            el      = "\"" + ri["External Link"]                    + "\""  
+            cont    = "\"" + s.join(ri["Contributors"])             + "\"" 
            
             output_str = s2.join([str(i), str(0), soft, desc, pcr, el, cont]) 
             print(output_str.encode("utf8"))
@@ -104,10 +104,10 @@ if args.list:
             s2      = "," 
             
             el = ("\"" + ri.get("homepageURL") + "\"") if ri.get("homepageURL") != None else ("\"" + "None" + "\"")
-            soft    = "\"" + ri['name']                 + "\""  
-            desc    = "\"" + ri['description']          + "\""  
-            pcr     = "\"" + ri["repositoryURL"]        + "\""  
-            cont    = "\"" + ri["contact"].get("email")      + "\"" 
+            soft    = "\"" + ri['name']                                 + "\""   
+            desc    = "\"" + ri['description'].replace('"', "'")        + "\""  
+            pcr     = "\"" + ri["repositoryURL"]                        + "\""  
+            cont    = "\"" + ri["contact"].get("email")                 + "\"" 
             m = hashlib.md5(bytes((el+soft+desc+pcr+cont).encode("utf8"))).hexdigest()
 
             output_str = s2.join([str(i), m, str(0), soft, desc, pcr, el, cont]) 
@@ -181,9 +181,6 @@ elif mode == 2:
 
             for c in cat:
                 print(c)
-
-    #prints out the repo in csv formatting  
-
 
     else:
         #if match name is provided, print out all the dumps for matching names
