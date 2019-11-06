@@ -29,7 +29,7 @@ def check_pages(num):
         #print("starting at resutlt " + str(curr_result))
 
         params = (
-            ('q', 'ascl'),
+            ('q', 'bibstem:ascl.soft'),
             ('fl',  'bibcode'),
             ('rows', "3000"),
             ('start', str(curr_result))
@@ -40,19 +40,25 @@ def check_pages(num):
         data = response.json();
         num_results = data["response"]["numFound"]
         
-        curr_result = curr_result + num_results
+        curr_result = curr_result + 2000
 
         #print(str(num_results) + " total found on page " + str(k))
         
+        for i in data["response"]["docs"]:
+            bc = i["bibcode"]
+            return_list.append(bc)
+
+        '''
         new_rel = []         
         for i in data["response"]["docs"]:
             bc = i['bibcode']
             if "ascl.soft" in bc:
                 new_rel.append(bc)
-
-        #print(str(len(new_rel)) + " relevant found on page " + str(k))
+        
+        print(str(len(new_rel)) + " relevant found on page " + str(k))
         
         return_list.extend(new_rel)
+        '''
     return_list.sort()
     return return_list
 
