@@ -46,7 +46,7 @@ def try1(txtfile):
 
 
 if __name__ == '__main__':
-    sumn = range(len(my1))
+    sumn = list(range(len(my1)))
     for i in range(len(sumn)):
         sumn[i] = 0
     for tfile in sys.argv[1:]:
@@ -72,4 +72,4 @@ if __name__ == '__main__':
     sys.stdout.write("\n")
     #
     for i in range(len(my1)):
-        print "  %2d %-12s" % (i+1,my1[i])
+        print("  %2d %-12s" % (i+1,my1[i]))
