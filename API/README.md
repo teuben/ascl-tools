@@ -1,4 +1,6 @@
-Here we document the API that is currently accessible via dev.ascl.net/api/search/. The purpose of the API is to provide an interface through which complex queries and searches can be conducted on ASCL data, returning JSON.
+Here we document the API that is currently accessible via
+http://dev.ascl.net/api/search/ .
+The purpose of the API is to provide an interface through which complex queries and searches can be conducted on ASCL data, returning JSON.
 
 # Syntax
 The search API for ASCL entries can be accessed through the /api/search/ endpoint. The syntax of a query follows, loosely, the style of Apache Solr. 
@@ -27,3 +29,4 @@ TODO: add support for multiple operations through AND or OR -- need to look into
 https://dev.ascl.net/api/search/?q=abstract:"nasa"&fl=century,abstract,bibcode,id&fq=century[lt]:20&
 
 
+ 
