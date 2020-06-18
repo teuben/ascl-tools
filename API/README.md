@@ -1,5 +1,5 @@
 Here we document the API that is currently accessible via
-http://dev.ascl.net/api/search/ .
+https://dev.ascl.net/api/search/ .
 The purpose of the API is to provide an interface through which complex queries and searches can be conducted on ASCL data, returning JSON.
 
 # Syntax
