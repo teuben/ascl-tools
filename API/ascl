@@ -1,0 +1,19 @@
+#! /usr/bin/env python
+#
+#
+
+import os
+import sys
+
+if len(sys.argv) == 1:
+    print("simple search for a name in ASCL")
+    sys.exit(0) 
+
+name = sys.argv[1]
+
+
+url = 'https://dev.ascl.net/api/search/?q=title:"%s"&fl=ascl_id,title,abstract' % name
+cmd = "curl '%s'" % url
+print(cmd)
+os.system(cmd)
+
