@@ -6,18 +6,18 @@ The purpose of the API is to provide an interface through which complex queries 
 The publically available database fields that you can access through the API are:
 | field | description |
 | ---- | ------------ |
-abstract| PLACEHOLDER
-ascl\_id |  PLACEHOLDER
-bibcode | PLACEHOLDER
-citation\_method |  PLACEHOLDER
-credit | PLACEHOLDER
-described\_in | PLACEHOLDER
+abstract| Brief description of the code
+ascl\_id |  The human-friendly version of an ASCL id. Format is YYMM.### where YY is the year, MM is the month, and ### is an incrementing integer padded with zeroes.
+bibcode | A 19-digit bibliographic code that allows the entry to be uniquely identified in several indexing services such as the SAO/NASA Astrophysics Data System (ADS). More information about this identifier appears on the ADS website (http://doc.adsabs.harvard.edu/abs\_doc/help\_pages/data.html#bibcodes).
+citation\_method | How the code should be cited, according to the author(s) or website of the code. As a courtesy to the code author(s), please check the code website to verify the citation preference.
+credit | Normalized list of author names, not serialized
+described\_in | Paper in which the code is described ("code paper"); this is typically a refereed paper written by the software author(s), though may not be refereed if there is a "used in" paper
 keywords | PLACEHOLDER
-site\_list | PLACEHOLDER
-time\_updated | PLACEHOLDER
-title | PLACEHOLDER
-used\_in | PLACEHOLDER
-views | PLACEHOLDER
+site\_list | Serialized array of websites associated with a code, including a download site
+time\_updated | Date/time code was last updated
+title | Title of the code, usually with a "short" title to start, followed by a colon and the longer name
+used\_in | Refereed paper in which the code is used but not described, which may be, and is often, written by someone other than the software author. This is provided as verification that the software has been used in a refereed research article, particularly when there is no code paper or the code paper has not been refereed.
+views | Number of times an individual code page has been visited
 
 
 
