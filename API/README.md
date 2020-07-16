@@ -12,7 +12,7 @@ bibcode | A 19-digit bibliographic code that allows the entry to be uniquely ide
 citation\_method | How the code should be cited, according to the author(s) or website of the code. As a courtesy to the code author(s), please check the code website to verify the citation preference.
 credit | Normalized list of author names, not serialized
 described\_in | Paper in which the code is described ("code paper"); this is typically a refereed paper written by the software author(s), though may not be refereed if there is a "used in" paper
-keywords | PLACEHOLDER
+keywords | Serialized array in a text field of words or phrases that are associated with the entry. Currently this field is used to identify software that is associated with NASA (National Aeronautics and Space Administration) and HITS (Heidelberg Institute for Theoretical Studies). 
 site\_list | Serialized array of websites associated with a code, including a download site
 time\_updated | Date/time code was last updated
 title | Title of the code, usually with a "short" title to start, followed by a colon and the longer name
