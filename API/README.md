@@ -1,5 +1,5 @@
 Here we document the API that is currently accessible via
-https://dev.ascl.net/api/search/ .
+https://ascl.net/api/search/ .
 The purpose of the API is to provide an interface through which complex queries and searches can be conducted on ASCL data. The API will return results in the JSON format.
 
 # Searchable Fields
@@ -56,24 +56,26 @@ TODO: implement OR filtering
 
 # Examples
 1. Example of a general, non-fielded query. This will search all public fields and return codes which contain the phrase "machine learning"
+
 [curl 'https://dev.ascl.net/api/search/?q="machine learning"'](https://dev.ascl.net/api/search/?q="machine learning")
+
 
 2. Example of a query with a filter query attached. This will search for public fields with the phrase "machine learning" whose time updated is greater than X 
 (TODO: implement time filter queries)
 
 3. Example of a query with a non-comparator filter query. This will return all codes with "nasa" in the abstract, whose century is exactly 19.
-https://dev.ascl.net/api/search/?q=abstract:"nasa"&fq=century:19
+https://ascl.net/api/search/?q=abstract:"nasa"&fq=century:19
 
 3. Example of a query with multiple filter queries. This will search for entries whose century is greater than 19 (meaning in the 21st century) and whose views are greater than 2000
-curl 'https://dev.ascl.net/api/search/?q=abstract:"nasa"&fq=century[gt]:19&fq=views[gte]:2300'
+curl 'https://ascl.net/api/search/?q=abstract:"nasa"&fq=century[gt]:19&fq=views[gte]:2300'
 
 4. Example of a query with a return field. This will return the title and the abstract of all entries whose abstracts contain "nasa"
-curl "https://dev.ascl.net/api/search/?q=abstract:"nasa"&fl=title,abstract"
+curl "https://ascl.net/api/search/?q=abstract:"nasa"&fl=title,abstract"
 
 
 5. Example of a query with an invalid return field (should return a 404)
-curl 'https://dev.ascl.net/api/search/?q=abstract:"nasa"&fl=abstract,idd'
+curl 'https://ascl.net/api/search/?q=abstract:"nasa"&fl=abstract,idd'
 
 
-7. example of a fielded query with multiple fields returned, and a filter query - century, abstract and bibcode of all ASCL entries whose abstract contains "nasa" and whose century is strictly less than 20 (meaning the 21st century in normal parlance)
-curl 'https://dev.ascl.net/api/search/?q=abstract:"nasa"&fl=century,abstract,bibcode&fq=century[lt]:20&'
+7. example of a fielded query with multiple fields returned, and a filter query - citation method, abstract and bibcode of all ASCL entries whose abstract contains "nasa" and whose views are strictly less than 200 
+curl 'https://ascl.net/api/search/?q=abstract:%22nasa%22&fl=citation_method,abstract,bibcode&fq=views[gt]:200'
