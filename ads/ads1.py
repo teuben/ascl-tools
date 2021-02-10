@@ -33,7 +33,7 @@ for code in codes:
 
     n1 = 0
     for paper in q:
-        print(paper.year, paper.citation_count, paper.bibcode, paper.first_author, paper.title)
+        print("%s\t%s\t%s\t%s\t%s" % (paper.year, paper.citation_count, paper.bibcode, paper.first_author, paper.title[0]))
         n1 = n1 + 1
 
     q1=q.response.get_ratelimits()
