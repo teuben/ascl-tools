@@ -5,10 +5,11 @@
 #   nov 2018:    1008 code    entries (68 have NONE identifier), 229 unique tags,
 #                 454 catalog entries
 #   sep 2019:    541/532 codes (312 have NONE)
+#   sep 2021:    558
 #
 #   Example use:
 #   ./ascl_list1.py -h               List help
-#   ./ascl_list1.py                  lists all "ID" and "NAME" pairs for mode=1 (code.json)
+#   ./ascl_list1.py                  lists all "ID" and "NAME" pairs for mode=1 (code.json) - deprecated
 #   ./ascl_list1.py --mode 2         lists all "NAME" for mode=2 (data/catalog.json)
 #
 #   
@@ -29,10 +30,10 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--list',       action='store_true')
 parser.add_argument('--tags',       action='store_true')
 
-parser.add_argument('--codedir',    type = str, default = '../code-nasa-gov',  help = "input directory for code-nasa-gov")
-parser.add_argument('--code',       type = str, default = 'code.json',         help = "input json for --mode 1")
-parser.add_argument('--catalog',    type = str, default = 'data/catalog.json', help = "input json for --mode 2")
-parser.add_argument("--mode",       type = int, default = 2,                   help = "1 (code) 2 (data/catalog)")
+parser.add_argument('--codedir',    type = str, default = 'code-nasa-gov',     help = "input directory for code-nasa-gov [code-nasa-gov]")
+parser.add_argument('--code',       type = str, default = 'code.json',         help = "input json for --mode 1 [code.json]")
+parser.add_argument('--catalog',    type = str, default = 'data/catalog.json', help = "input json for --mode 2 [data/catalog.json]")
+parser.add_argument("--mode",       type = int, default = 2,                   help = "1 (code) 2 (data/catalog) [2]")
 parser.add_argument("--matchid",    type = str, default = None,                help = "print json for exact match ID (mode 1 only)")
 parser.add_argument("--matchname",  type = str, default = None,                help = "print json for matching NAME")
 parser.add_argument("--matchdesc",  type = str, default = None,                help = "print json for matching DESCRIPTION")
