@@ -68,9 +68,7 @@ queries, or the logical AND of the filters.
 # Examples
 1. Example of a general, non-fielded query. This will search all public fields and return codes which contain the phrase "machine learning"
 
-https://dev.ascl.net/api/search/?q="machine learning"
-
-[curl 'https://dev.ascl.net/api/search/?q="machine learning"'](https://dev.ascl.net/api/search/?q="machine learning")
+[curl 'https://ascl.net/api/search/?q="machine learning"'](https://ascl.net/api/search/?q="machine learning")
 
 
 2. Example of a query with a filter query attached. This will search for public fields with the phrase "machine learning" whose time updated is greater than X 
