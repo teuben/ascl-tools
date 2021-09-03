@@ -22,22 +22,31 @@ views | Number of times an individual code page has been visited
 
 
 # Syntax
-The search API for ASCL entries can be accessed through the /api/search/ endpoint. The syntax of a query follows, loosely, the style of Apache Solr. 
+The search API for ASCL entries can be accessed through the /api/search/ endpoint. 
+The syntax of a query follows, loosely, the style of *Apache Solr*. 
 
 
 ## Mandatory Parameters
 
 ### q
-All queries **must** have the q parameter, which specifies a general search string. It can be empty or contain a string, but it **must** be included in quotation marks (""). Not including this parameter or not including quotation marks will return a 404 error. 
+All queries **must** have the **q** (query) parameter, which specifies a
+general search string. It can be empty or contain a string, but it
+**must** be included in quotation marks (""). Not including this
+parameter or not including quotation marks will return a 404 error.
 
 
 ## Optional parameters
 
 ### fl
-The fl parameter describes the fields of the ASCL entry that will be returned in the call. It must be a string with each field delimited by commas (,). 
+
+The **fl** parameter describes the fields of the ASCL entry that will
+be returned in the call. It must be a string with each field delimited
+by commas (,).
 
 ### fq
-The fq (filter query) parameter allows for further filtering of data through the use of specific operations. The sytax is as follows:
+
+The **fq** (filter query) parameter allows for further filtering of data
+through the use of specific operations. The sytax is as follows:
 
 *field-name*[*optional-comparator*]:*value*
 
@@ -49,19 +58,24 @@ There are 4 optional comparators. They are:
 | gt | greater than |
 | gte | greater than or equal to |
 
-The fq parameter can be specified multiple times in a query. The returned result will contain the intersection of the individual queries, or the logical AND of the filters. 
+The **fq** parameter can be specified multiple times in a query. The
+returned result will contain the intersection of the individual
+queries, or the logical AND of the filters.
 
-TODO: implement OR filtering
+@todo implement OR filtering
 
 
 # Examples
 1. Example of a general, non-fielded query. This will search all public fields and return codes which contain the phrase "machine learning"
 
+https://dev.ascl.net/api/search/?q="machine learning"
+
 [curl 'https://dev.ascl.net/api/search/?q="machine learning"'](https://dev.ascl.net/api/search/?q="machine learning")
 
 
 2. Example of a query with a filter query attached. This will search for public fields with the phrase "machine learning" whose time updated is greater than X 
-(TODO: implement time filter queries)
+
+@todo implement time filter queries
 
 3. Example of a query with a non-comparator filter query. This will return all codes with "nasa" in the abstract, whose century is exactly 19.
 https://ascl.net/api/search/?q=abstract:"nasa"&fq=century:19
