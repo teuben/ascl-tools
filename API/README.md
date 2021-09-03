@@ -1,6 +1,7 @@
 Here we document the API that is currently accessible via
 https://ascl.net/api/search/ .
-The purpose of the API is to provide an interface through which complex queries and searches can be conducted on ASCL data. The API will return results in the JSON format.
+The purpose of the API is to provide an interface through which complex queries and searches can be conducted on ASCL data. The API will return results in the 
+[JSON](https://en.wikipedia.org/wiki/JSON) format.
 
 # Searchable Fields
 The publically available database fields that you can access through the API are:
