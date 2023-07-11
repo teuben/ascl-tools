@@ -2520,3 +2520,699 @@ ascl:2105.002	PDM2: Phase Dispersion Minimization
 ascl:2105.003	ATARRI: A TESS Archive RR Lyrae Classifier
 ascl:2105.004	TesseRACt: Tessellation-based Recovery of Amorphous halo Concentrations
 ascl:2105.005	COMPAS: Rapid binary population synthesis code
+ascl:2105.006	The Sequencer: Detect one-dimensional sequences in complex datasets
+ascl:2105.007	SpheCow: Galaxy and dark matter halo dynamical properties
+ascl:2105.008	MCALF: Velocity information from spectral imaging observations
+ascl:2105.009	MeerCRAB: Transient classifier using a deep learning model
+ascl:2105.010	ZOGY: Python implementation of proper image subtraction
+ascl:2105.011	BlackBOX: BlackGEM and MeerLICHT image reduction software
+ascl:2105.012	orvara: Orbits from Radial Velocity, Absolute, and/or Relative Astrometry
+ascl:2105.013	SISPO: Imaging simulator for small solar system body missions
+ascl:2105.014	encore: Efficient isotropic 2-, 3-, 4-, 5- and 6-point correlation functions
+ascl:2105.015	PyTorchDIA: Difference Image Analysis tool
+ascl:2105.016	CUDAHM: MCMC sampling of hierarchical models with GPUs
+ascl:2105.017	Pyrat Bay: Python Radiative Transfer in a Bayesian framework
+ascl:2105.018	ClaRAN: Classifying Radio sources Automatically with Neural networks
+ascl:2105.019	RandomQuintessence: Integrate the Klein-Gordon and Friedmann equations with random initial conditions
+ascl:2105.020	PAP: PHANGS-ALMA pipeline
+ascl:2105.021	Kepler's Goat Herd: Solving Kepler's equation via contour integration
+ascl:2105.022	PFITS: Spectra data reduction
+ascl:2106.001	KOBE: Kepler Observes Bern Exoplanets
+ascl:2106.002	dopmap: Fast Doppler mapping program
+ascl:2106.003	PyDoppler: Wrapper for Doppler tomography software
+ascl:2106.004	crowdsource: Crowded field photometry pipeline
+ascl:2106.005	Marvin: Data access and visualization for MaNGA
+ascl:2106.006	Pyshellspec: Binary systems with circumstellar matter
+ascl:2106.007	CoMover: Bayesian probability of co-moving stars
+ascl:2106.008	simqso: Simulated quasar spectra generator
+ascl:2106.009	baofit: Fit cosmological data to measure baryon acoustic oscillations
+ascl:2106.010	Maneage: Managing data lineage
+ascl:2106.011	MakeCloud: Turbulent GMC initial conditions for GIZMO
+ascl:2106.012	StarcNet: Convolutional neural network for classifying galaxy images into morphological classes
+ascl:2106.013	Kadath: Spectral solver
+ascl:2106.014	Lemon: Linear integral Equations' Monte carlo solver based On the Neumann solution
+ascl:2106.015	ATES: ATmospheric EScape
+ascl:2106.016	QuasarNET: CNN for redshifting and classification of astrophysical spectra
+ascl:2106.017	redvsblue: Quasar and emission line redshift fitting
+ascl:2106.018	picca: Package for Igm Cosmological-Correlations Analyses
+ascl:2106.019	GLEMuR: GPU-based Lagrangian mimEtic Magnetic Relaxation
+ascl:2106.020	simple_reg_dem: Differential Emission Measures in the solar corona
+ascl:2106.021	aztekas: GRHD numerical code
+ascl:2106.022	STaRS: Sejong Radiative Transfer through Raman and Rayleigh Scattering with atomic hydrogen
+ascl:2106.023	so_noise_models: Simons Observatory N(ell) noise models
+ascl:2106.024	RedPipe: Reduction Pipeline
+ascl:2106.025	ModeChord: Primordial scalar and tensor power spectra solver
+ascl:2106.026	Katu: Interaction of particles in plasma simulator
+ascl:2106.027	MultiModeCode: Numerical exploration of multifield inflation models
+ascl:2106.028	FRBSTATS: A web-based platform for visualization of fast radio burst properties
+ascl:2106.029	EMBERS: Experimental Measurement of BEam Responses with Satellites
+ascl:2106.030	DM_statistics: Statistics of the cosmological dispersion measure (DM)
+ascl:2106.031	BiHalofit: Fitting formula of non-linear matter bispectrum
+ascl:2106.032	DarkSirensStat: Measuring modified GW propagation and the Hubble parameter
+ascl:2106.033	ZWAD: Anomaly detection pipeline
+ascl:2106.034	ztf-viewer: SNAD ZTF data releases object viewer
+ascl:2106.035	CalPriorSNIa: Effective calibration prior on the absolute magnitude of Type Ia supernovae
+ascl:2106.036	BiFFT: Fast estimation of the bispectrum
+ascl:2106.037	PORTA: POlarized Radiative TrAnsfer
+ascl:2106.038	ehtplot: Plotting functions for the Event Horizon Telescope
+ascl:2106.039	atmos: Coupled climate-photochemistry model
+ascl:2106.040	IRAGNSEP: Spectral energy distribution fitting code
+ascl:2107.001	light-curve: Light curve analysis toolbox
+ascl:2107.002	ROA: Running Optimal Average
+ascl:2107.003	PMN-body: Particle Mesh N-body code
+ascl:2107.004	FoF-Halo-finder: Halo location and size
+ascl:2107.005	ReionYuga: Epoch of Reionization neutral Hydrogen field generator
+ascl:2107.006	snmachine: Photometric supernova classification
+ascl:2107.007	Skymapper: Mapping astronomical survey data on the sky
+ascl:2107.008	nimbus: A Bayesian inference framework to constrain kilonova models
+ascl:2107.009	Balrog: Astronomical image simulation
+ascl:2107.010	SpArcFiRe: SPiral ARC FInder and REporter
+ascl:2107.011	AlignBandColors: Inter-color-band image alignment tool
+ascl:2107.012	PyROA: Modeling quasar light curves
+ascl:2107.013	GUBAS: General Use Binary Asteroid Simulator
+ascl:2107.014	Skylens++: Simulation package for optical astronomical observations
+ascl:2107.015	shapelens: Astronomical image analysis and shape estimation framework
+ascl:2107.016	shear-stacking: Stacked shear profiles and tests based upon them
+ascl:2107.017	PyCactus: Post-processing tools for Cactus computational toolkit simulation data
+ascl:2107.018	ART: A Reconstruction Tool
+ascl:2107.019	PlaSim: Planet Simulator
+ascl:2107.020	Chem-I-Calc: Chemical Information Calculator
+ascl:2107.021	RePrimAnd: Recovery of Primitives And EOS framework
+ascl:2107.022	Kd-match: Correspondences of objects between two catalogs through pattern matching
+ascl:2107.023	cosmic_variance: Cosmic variance calculator
+ascl:2107.024	K2-CPM: Causal Pixel Model for K2 data
+ascl:2107.025	MCPM: Modified CPM method
+ascl:2107.026	K2mosaic: Mosaic Kepler pixel data
+ascl:2107.027	KeplerPORTS: Kepler Planet Occurrence Rate Tools
+ascl:2107.028	TRINITY: Dark matter halos, galaxies and supermassive black holes empirical model
+ascl:2107.029	PHL: Persistent_Homology_LSS
+ascl:2107.030	HERMES: High-Energy Radiative MESsengers
+ascl:2108.001	HRK: HII Region Kinematics
+ascl:2108.002	AUM: A Unified Modeling scheme for galaxy abundance, galaxy clustering and galaxy-galaxy lensing
+ascl:2108.003	MAPS: Multi-frequency Angular Power Spectrum estimator
+ascl:2108.004	WaldoInSky: Anomaly detection algorithms for time-domain astronomy
+ascl:2108.005	millennium-tap-query: Python tool to query the Millennium Simulation UWS/TAP client
+ascl:2108.006	viper: Velocity and IP EstimatoR
+ascl:2108.007	catwoman: Transit modeling Python package for asymmetric light curves
+ascl:2108.008	CatBoost: High performance gradient boosting on decision trees library
+ascl:2108.009	caesar-rest: Web service for the caesar source extractor
+ascl:2108.010	FIREFLY: Chi-squared minimization full spectral fitting code
+ascl:2108.011	BOSS-Without-Windows: Window-free analysis of the BOSS DR12 power spectrum and bispectrum
+ascl:2108.012	NRDD_constraints: Dark Matter interaction with the Standard Model exclusion plot calculator
+ascl:2108.013	AMOEBA: Automated Gaussian decomposition
+ascl:2108.014	StelNet: Stellar mass and age predictor
+ascl:2108.015	ELISa: Eclipsing binaries Learning Interactive System
+ascl:2108.016	Chemulator: Thermochemical emulator for hydrodynamical modeling
+ascl:2108.017	AutoProf: Automatic Isophotal solutions for galaxy images
+ascl:2108.018	Cosmic-CoNN: Cosmic ray detection toolkit
+ascl:2108.019	PIPS: Period detection and Identification Pipeline Suite
+ascl:2108.020	DBSP_DRP: DBSP Data Reduction Pipeline
+ascl:2108.021	ExoPlaSim: Exoplanet climate simulator
+ascl:2108.022	COSMIC: Compact Object Synthesis and Monte Carlo Investigation Code
+ascl:2108.023	CMC-COSMIC: Cluster Monte Carlo code
+ascl:2108.024	iminuit: Jupyter-friendly Python interface for C++ MINUIT2
+ascl:2108.025	SORA: Stellar Occultation Reduction Analysis
+ascl:2109.001	gammaALPs: Conversion probability between photons and axions/axionlike particles
+ascl:2109.002	alpconv: Calculating alp-photon conversion
+ascl:2109.003	VOLKS2: VLBI Observation for transient Localization Keen Searcher
+ascl:2109.004	DviSukta: Spherically Averaged Bispectrum calculator
+ascl:2109.005	SoFiA 2: An automated, parallel HI source finding pipeline
+ascl:2109.006	eMCP: e-MERLIN CASA pipeline
+ascl:2109.007	SkyCalc_ipy: SkyCalc wrapper for interactive Python
+ascl:2109.008	pyia: Python package for working with Gaia data
+ascl:2109.009	pyFFTW: python wrapper around FFTW
+ascl:2109.010	Frankenstein: Flux reconstructor
+ascl:2109.011	Rubble: Simulating dust size distributions in protoplanetary disks
+ascl:2109.012	STAR-MELT: STellar AccrRetion Mapping with Emission Line Tomography
+ascl:2109.013	WimPyDD: WIMP direct-detection rates predictor
+ascl:2109.014	HSS: The Hough Stream Spotter
+ascl:2109.015	unpopular: Using CPM detrending to obtain TESS light curves
+ascl:2109.016	SkyPy: Simulating the astrophysical sky
+ascl:2109.017	HTOF: Astrometric solutions for Hipparcos and Gaia intermediate data
+ascl:2109.018	GLoBES: General Long Baseline Experiment Simulator
+ascl:2109.019	SNOwGLoBES: SuperNova Observatories with GLoBES
+ascl:2109.020	SNEWPY: Supernova Neutrino Early Warning Models for Python
+ascl:2109.021	WeakLensingDeblending: Weak lensing fast simulations and analysis of blended objects
+ascl:2109.022	ShapeMeasurementFisherFormalism: Fisher Formalism for Weak Lensing
+ascl:2109.023	gphist: Cosmological expansion history inference using Gaussian processes
+ascl:2109.024	BHJet: Semi-analytical black hole jet model
+ascl:2109.025	Menura: Multi-GPU numerical model for space plasma simulation
+ascl:2109.026	Varstar Detect: Variable star detection in TESS data
+ascl:2109.027	OSPREI: Sun-to-Earth (or satellite) CME simulator
+ascl:2109.028	Healpix.jl: Julia-only port of the HEALPix library
+ascl:2109.029	BiPoS1: Dynamical processing of the initial binary star population
+ascl:2109.030	Snowball: Generalizable atmospheric mass loss calculator
+ascl:2110.001	JWSTSim: Geometric-Focused JWST Deep Field Image Simulation
+ascl:2110.002	exodetbox: Finding planet-star projected separation extrema and difference in magnitude extrema
+ascl:2110.003	PSRDADA: Distributed Acquisition and Data Analysis for Radio Astronomy
+ascl:2110.004	TULIPS: Tool for Understanding the Lives, Interiors, and Physics of Stars
+ascl:2110.005	TauRunner: Code to propagate tau neutrinos at very high energies
+ascl:2110.006	ArtPop: Artificial Stellar Populations generator
+ascl:2110.007	PISCOLA: Python for Intelligent Supernova-COsmology Light-curve Analysis
+ascl:2110.008	ParSNIP: Parametrization of SuperNova Intrinsic Properties
+ascl:2110.009	Quokka: Two-moment AMR radiation hydrodynamics on GPUs for astrophysics
+ascl:2110.010	BASTA: BAyesian STellar Algorithm
+ascl:2110.011	GRASS: GRanulation and Spectrum Simulator
+ascl:2110.012	GGCHEMPY: Gas-Grain CHEMical code for interstellar medium in Python3
+ascl:2110.013	Nauyaca: N-body approach for determining planetary masses and orbital elements
+ascl:2110.014	swordfish: Information yield of counting experiments
+ascl:2110.015	Flux: Julia machine learning library
+ascl:2110.016	pyro: Deep universal probabilistic programming with Python and PyTorch
+ascl:2110.017	ThERESA: 3D Exoplanet Cartography
+ascl:2110.018	FEniCS: Computing platform for solving partial differential equations
+ascl:2110.019	SELCIE: Screening Equations Linearly Constructed and Iteratively Evaluated
+ascl:2110.020	BCES: Linear regression for data with measurement errors and intrinsic scatter
+ascl:2110.021	PT-REX: Point-to-point TRend EXtractor
+ascl:2110.022	XookSuut: Model circular and noncircular flows on 2D velocity maps
+ascl:2111.001	astroDDPM: Realistic galaxy simulation via score-based generative models
+ascl:2111.002	JAX: Autograd and XLA
+ascl:2111.003	PSwarm: Global optimization solver for bound and linear constrained problems
+ascl:2111.004	NLopt: Nonlinear optimization library
+ascl:2111.005	CEvNS: Calculate Coherent Elastic Neutrino-Nucleus Scattering cross sections and recoil spectra
+ascl:2111.006	prose: FITS images processing pipeline
+ascl:2111.007	LEGWORK: LISA Evolution and Gravitational Wave ORbit Kit
+ascl:2111.008	COCOPLOT: COlor COllapsed PLOTting software
+ascl:2111.009	CoLoRe: Cosmological Lofty Realization
+ascl:2111.010	Nii: Multidimensional posterior distributions framework
+ascl:2111.011	p-winds: Python implementation of Parker wind models for planetary atmospheres
+ascl:2111.012	flatstar: Make 2d intensity maps of limb-darkened stars
+ascl:2111.013	Astrosat: Satellite transit calculator
+ascl:2111.014	UniMAP: Unicorn Multi-window Anomaly Detection Pipeline
+ascl:2111.015	gCMCRT: 3D Monte Carlo Radiative Transfer for exoplanet atmospheres using GPUs
+ascl:2111.016	SteParSyn: Stellar atmospheric parameters using the spectral synthesis method
+ascl:2111.017	pySYD: Measuring global asteroseismic parameters
+ascl:2111.018	GWToolbox: Gravitational wave observation simulator
+ascl:2112.001	pycelp: Python package for Coronal Emission Line Polarization
+ascl:2112.002	QUESTFIT: Fitter for mid-infrared galaxy spectra
+ascl:2112.003	SCORPIO: Sky COllector of galaxy Pairs and Image Output
+ascl:2112.004	Defringe: Fringe artifact correction
+ascl:2112.005	Interferopy: Analyzing datacubes from radio-to-submm observations
+ascl:2112.006	STDPipe: Simple Transient Detection Pipeline
+ascl:2112.007	NeutrinoFog: Neutrino fog and floor for direct dark matter searches
+ascl:2112.008	MISTTBORN: MCMC Interface for Synthesis of Transits, Tomography, Binaries, and Others of a Relevant Nature
+ascl:2112.009	AsteroGaP: Asteroid Gaussian Processes
+ascl:2112.010	WIMpy_NREFT: Dark Matter direct detection rates detector
+ascl:2112.011	DarkARC: Dark Matter-induced Atomic Response Code
+ascl:2112.012	DiracVsMajorana: Statistical discrimination of sub-GeV Majorana and Dirac dark matter
+ascl:2112.013	Qwind: Non-hydrodynamical model for AGN line-drive winds
+ascl:2112.014	Qwind3: Modeling UV line-driven winds originating from accretion discs
+ascl:2112.015	SAPHIRES: Stellar Analysis in Python for HIgh REsolution Spectroscopy
+ascl:2112.016	TESSreduce: Transient focused reduction for TESS data
+ascl:2112.017	deeplenstronomy: Pipeline for versatile strong lens sample simulations
+ascl:2112.018	Optab: Ideal-gas opacity tables generator
+ascl:2112.019	O'TRAIN: Optical TRAnsient Identification NEtwork
+ascl:2112.020	BayesicFitting: Model fitting and Bayesian evidence calculation package
+ascl:2112.021	GRIT: Gravitational Rigid-body InTegrators for simulating coupled dynamics
+ascl:2112.022	hankl: Python implementation of the FFTLog algorithm for cosmology
+ascl:2112.023	wpca: Weighted Principal Component Analysis in Python
+ascl:2112.024	l1p: Python implementation of the l1 periodogram
+ascl:2112.025	FTP: Fast Template Periodogram
+ascl:2112.026	HoloSim-ML: Analyzing radio holography measurements of complex optical systems
+ascl:2112.027	JexoSim 2.0: JWST Exoplanet Observation Simulator
+ascl:2201.001	EzTao: Easier CARMA Modeling
+ascl:2201.002	AstroToolBox: Java tools for identifying and classifying astronomical objects
+ascl:2201.003	BLOSMapping: Determine line-of-sight magnetic fields of molecular clouds
+ascl:2201.004	FitsMap: Interactive astronomical image and catalog data visualizer
+ascl:2201.005	AllStarFit: R package for source detection, PSF and multi-component galaxy fitting
+ascl:2201.006	dark-photons-perturbations: Dark photon conversions in our inhomogeneous Universe
+ascl:2201.007	tellrv: Radial velocities for low-resolution NIR spectra
+ascl:2201.008	fermi-gce-flows: Infer the Galactic Center gamma-ray excess
+ascl:2201.009	AltaiPony: Flare finder for Kepler, K2, and TESS light curves
+ascl:2201.010	statmorph: Non-parametric morphological diagnostics of galaxy images
+ascl:2201.011	COWS: Cosmic web filament finder
+ascl:2201.012	MAGRATHEA: Planet interior structure code
+ascl:2201.013	disnht: Absorption spectrum solver
+ascl:2201.014	nProFit: n-Profile Fitting tool
+ascl:2202.001	GA Galaxy: Interacting galaxies model fitter
+ascl:2202.002	NWelch: Spectral analysis of time series with nonuniform observing cadence
+ascl:2202.003	Zwindstroom: Cosmological growth factors from fluid calculations
+ascl:2202.004	SUPPNet: Spectrum normalization neural network
+ascl:2202.005	palettable: Color palettes for Python
+ascl:2202.006	FIRE Studio: Movie making utilities for the FIRE simulations
+ascl:2202.007	SciCatalog: Tools for scientific data catalogs
+ascl:2202.008	TERRA: Transit detection code
+ascl:2202.009	EDIV: Exoplanet Detection Identifier Vetter
+ascl:2202.010	EDIVU: Exoplanet Detection Identifier Vetter Unplugged
+ascl:2202.011	RFEP: Residual Feature Extraction Pipeline
+ascl:2202.012	fiducial_flare: Spectra and lightcurves of a standardized far ultraviolet flare
+ascl:2202.013	PSLS: PLATO Solar-like Light-curve Simulator
+ascl:2202.014	Citlalicue: Create and manipulate stellar light curves
+ascl:2202.015	SPARTAN: SPectroscopic And photometRic fiTting tool for Astronomical aNalysis
+ascl:2202.016	Find_Orb: Orbit determination from observations
+ascl:2202.017	GALLUMI: GALaxy LUMInosity function pipeline
+ascl:2202.018	Sculptor: Interactive modeling of astronomical spectra
+ascl:2202.019	Contaminante: Identify blended targets in Kepler, TESS, and K2 data
+ascl:2202.020	distance-omnibus: Distance estimation method for molecular cloud clumps in the Milky Way
+ascl:2202.021	popsynth: Observed surveys from latent population models
+ascl:2202.022	ASPIRED: Automated SpectroPhotometric Image REDuction
+ascl:2202.023	Starduster: Radiative transfer and deep learning multi-wavelength SED model
+ascl:2202.024	SunnyNet: Neural network framework for solving 3D NLTE radiative transfer in stellar atmospheres
+ascl:2202.025	INSANE: INflationary potential Simulator and ANalysis Engine
+ascl:2202.026	topoaccel: Topological acceleration scripts
+ascl:2203.001	SISTER: Starshade Imaging Simulation Toolkit for Exoplanet Reconnaissance
+ascl:2203.002	exoVista: Planetary systems generator
+ascl:2203.003	NIMBLE: Non-parametrIc jeans Modeling with B-spLinEs
+ascl:2203.004	imexam: IMage EXAMination and plotting
+ascl:2203.005	pygacs: Toolkit to manipulate Gaia catalog tables
+ascl:2203.006	starry_process: Interpretable Gaussian processes for stellar light curves
+ascl:2203.007	GAMERA: Source modeling in gamma astronomy
+ascl:2203.008	MIRaGe: Multi Instrument Ramp Generator
+ascl:2203.009	fleck: Fast starspot rotational modulation light curves
+ascl:2203.010	D2O: Distributed Data Object
+ascl:2203.011	SATCHEL: Pipeline to search for long-period exoplanet signals
+ascl:2203.012	pyobs: Python framework for autonomous astronomical observatories
+ascl:2203.013	PetroFit: Petrosian properties calculator and galaxy light profiles fitter
+ascl:2203.014	AutoSourceID-Light: Source localization in optical images
+ascl:2203.015	easyFermi: Fermi-LAT data analyzer
+ascl:2203.016	MaNGA-DRP: MaNGA Data Reduction Pipeline
+ascl:2203.017	MaNGA-DAP: MaNGA Data Analysis Pipeline
+ascl:2203.018	sympy2c: Generating fast C/C++ functions and ODE solvers from symbolic expressions
+ascl:2203.019	agnpy: Modeling jetted Active Galactic Nuclei radiative processes with Python
+ascl:2203.020	MAMPOSSt: Mass/orbit modeling of spherical systems
+ascl:2203.021	MG-MAMPOSSt: Test gravity with the mass profiles of galaxy clusters
+ascl:2203.022	Vetting: Stand-alone tools for vetting transit signals in Kepler, K2 and TESS data
+ascl:2203.023	MAGRATHEA: Multi-processor Adaptive Grid Refinement Analysis for THEoretical Astrophysics
+ascl:2203.024	Magrathea-Pathfinder: 3D AMR ray-tracing in simulations
+ascl:2203.025	SetCoverPy: A heuristic solver for the set cover problem
+ascl:2203.026	axionCAMB: Modification of the CAMB Boltzmann code
+ascl:2203.027	Zoobot: Deep learning galaxy morphology classifier
+ascl:2203.028	SimLine: Radiative transfer in molecular lines
+ascl:2203.029	Bootsik: Potential field calculator
+ascl:2203.030	Wigglewave: Linearized governing equations solver
+ascl:2203.031	TAWAS: Wave equation solver
+ascl:2204.001	TG: Turbulence Generator
+ascl:2204.002	Astroplotlib: Python scripts to handle astronomical images
+ascl:2204.003	legacystamps: Retrieve DESI Legacy Imaging Surveys cutouts
+ascl:2204.004	Bayesian SZNet: Bayesian deep learning to predict redshift with uncertainty
+ascl:2204.005	TESS-Localize: Localize variable star signatures in TESS Photometry
+ascl:2204.006	dsigma: Galaxy-galaxy lensing Python package
+ascl:2204.007	RTS: Radio Transient Simulations
+ascl:2204.008	RMNest: Bayesian approach to measuring Faraday rotation and conversion in radio signals
+ascl:2204.009	MAYONNAISE: ADI data imaging processing pipeline
+ascl:2204.010	FBCTrack: Fragmentation and bulk composition tracking
+ascl:2204.011	SimAb: Planet formation model
+ascl:2204.012	SpECTRE: Multi-scale, multi-physics problem solver
+ascl:2204.013	SCRIPT: Semi-numerical Code for ReIonization with PhoTon-conservation
+ascl:2204.014	GADGET-4: Parallel cosmological N-body and SPH code
+ascl:2204.015	ADBSat: Aerodynamic Database for Satellites
+ascl:2204.016	pySIDES: Simulated Infrared Dusty Extragalactic Sky in Python
+ascl:2204.017	RSG: Redshift Search Graphs
+ascl:2204.018	ProFuse: Galaxies and components modeler
+ascl:2204.019	DarkFlux: Dark Matter annihilation spectrum computer
+ascl:2204.020	MonoTools: Planets of uncertain periods detector and modeler
+ascl:2205.001	PMOIRED: Parametric Modeling of Optical Interferometric Data
+ascl:2205.002	am: Microwave through submillimeter-wave propagation tool for the terrestrial atmosphere
+ascl:2205.003	QSOGEN: Model quasar SEDs
+ascl:2205.004	FAlCon-DNS: Framework of time schemes for direct numerical simulation of annular convection
+ascl:2205.005	maelstrom: Forward modeling of pulsating stars in binaries
+ascl:2205.006	LATTE: Lightcurve Analysis Tool for Transiting Exoplanet
+ascl:2205.007	EarthScatterLikelihood: Event rates and likelihoods for Dark Matter direct detection in the presence of Earth-Scattering
+ascl:2205.008	Hyperopt: Distributed asynchronous hyper-parameter optimization
+ascl:2205.009	hyperas: Keras + Hyperopt
+ascl:2205.010	pyICs: Initial Conditions creator for isolated galaxy formation simulations
+ascl:2205.011	myRadex: Radex with a twist
+ascl:2205.012	Zelda: Generate correlation functions and power spectra from a galaxy catalog
+ascl:2205.013	ld-exosim: Simulate biases using different limb darkening laws
+ascl:2205.014	FHD: Fast Holographic Deconvolution
+ascl:2205.015	CS-ROMER: Compressed Sensing ROtation MEasure Reconstruction
+ascl:2205.016	Pryngles: PlanetaRY spaNGLES
+ascl:2205.017	LiSA: LIghtweight Source finding Algorithms for analysis of HI spectral data
+ascl:2205.018	ASOHF: Adaptive Spherical Overdensity Halo Finder
+ascl:2205.019	HOPS: Haystack Observatory Postprocessing System
+ascl:2205.020	ASTROMER: Building light curves embeddings using transfomers
+ascl:2205.021	CPNest: Parallel nested sampling
+ascl:2205.022	BANG: BAyesian decomposiotioN of Galaxies
+ascl:2205.023	PyWPF: Waterfall Principal Component Analysis (PCA) Folding
+ascl:2205.024	MM-LSD: Multi-Mask Least-Squares Deconvolution
+ascl:2205.025	simulateSearch: High-time resolution data sets simulations for radio telescopes
+ascl:2206.001	vortex: Helmholtz-Hodge decomposition for an AMR velocity field
+ascl:2206.002	TCF: Transit Comb Filter periodogram
+ascl:2206.003	ExoJAX: Spectrum modeling of exoplanets and brown dwarfs
+ascl:2206.004	pystortion: Distortion measurement support
+ascl:2206.005	NonnegMFPy: Nonnegative Matrix Factorization with heteroscedastic uncertainties and missing data
+ascl:2206.006	MYRaf: Aperture photometry GUI for IRAF
+ascl:2206.007	CircleCraters: Crater-counting plugin for QGIS
+ascl:2206.008	Craterstats2: Planetary surface dating from crater size-frequency distribution measurements
+ascl:2206.009	Craterstats3: Analyze and plot crater count data for planetary surface dating
+ascl:2206.010	pyHIIexplorerV2: Integrated spectra of HII regions extractor
+ascl:2206.011	IFSCube: Analyze and process integral field spectroscopy data cubes
+ascl:2206.012	WDPhotTools: White Dwarf Photometric SED fitter and luminosity function builder
+ascl:2206.013	smooth: Smoothing for N-body simulations
+ascl:2206.014	SpinSpotter: Stellar rotation periods from high-cadence photometry calculator
+ascl:2206.015	Smart: Automatic differentiation of accelerations and variational equations
+ascl:2206.016	wdwarfdate: White dwarfs age calculator
+ascl:2206.017	atoMEC: Average-Atom code for Matter under Extreme Conditions
+ascl:2206.018	MADYS: Isochronal parameter determination for young stellar and substellar objects
+ascl:2206.019	SEVN: Stellar EVolution for N-body
+ascl:2206.020	CCDLAB: FITS image viewer and data reducer
+ascl:2206.021	PyCASSO2: Stellar population and emission line fits in integral field spectra
+ascl:2206.022	RealSim-IFS: Realistic synthetic integral field spectrscopy of galaxies from numerical simulations
+ascl:2206.023	pyPipe3D: Spectroscopy analysis pipeline
+ascl:2206.024	Wavetrack: Arbitrary time-evolving solar object recognition and tracking
+ascl:2206.025	CuspCore: Core formation in dark matter haloes and ultra-diffuse galaxies by outflow episodes
+ascl:2206.026	ShapePipe: Galaxy shape measurement pipeline
+ascl:2206.027	DustFilaments: Paint filaments to produce a thermal dust full sky map at mm frequencies
+ascl:2206.028	Spritz: General relativistic magnetohydrodynamic code
+ascl:2207.001	MULTIGRIS: Multicomponent probabilistic grid search
+ascl:2207.002	pynucastro: Python interfaces to the nuclear reaction rate databases
+ascl:2207.003	MeSsI: MErging SystemS Identification
+ascl:2207.004	cosmic-kite: Auto-encoding the Cosmic Microwave Background
+ascl:2207.005	echelle: Dynamic echelle diagrams for asteroseismology
+ascl:2207.006	MultiModes: Efficiently analyze pulsating stars
+ascl:2207.007	Pyriod: Period detection and fitting routines
+ascl:2207.008	TESS_PRF: Display the TESS pixel response function
+ascl:2207.009	SolAster: 'Sun-as-a-star' radial velocity variations
+ascl:2207.010	Helios-r2: Bayesian nested-sampling retrieval code
+ascl:2207.011	samsam: Scaled Adaptive Metropolis SAMpler
+ascl:2207.012	ExoCTK: Exoplanet Characterization Tool Kit
+ascl:2207.013	MuSCAT2_transit_pipeline: MuSCAT2 photometry and transit analysis pipelines
+ascl:2207.014	petitRADTRANS: Exoplanet spectra calculator
+ascl:2207.015	calviacat: Calibrate star photometry by catalog comparison
+ascl:2207.016	DustPy: Simulation of dust evolution in protoplanetary disks
+ascl:2207.017	LOTUS: 1D Non-LTE stellar parameter determination via Equivalent Width method
+ascl:2207.018	pocoMC: Preconditioned Monte Carlo method for accelerated Bayesian inference
+ascl:2207.019	walter: Predictor for the number of resolved stars in a given observation from RST
+ascl:2207.020	vKompth: Time-dependent Comptonization model for black-hole X-ray binaries
+ascl:2207.021	BAYGAUD: BAYesian GAUssian Decomposer
+ascl:2207.022	triple-stability: Triple-star system stability determinator
+ascl:2207.023	MCFOST: Radiative transfer code
+ascl:2207.024	pymcfost: Python interface to the MCFOST 3D radiative transfer code
+ascl:2207.025	casa_cube: Display and analyze astronomical data cubes
+ascl:2207.026	pdspy: MCMC tool for continuum and spectral line radiative transfer modeling
+ascl:2207.027	ConeRot: Velocity perturbations extractor
+ascl:2207.028	disksurf: Measure the molecular emission surface of protoplanetary disks
+ascl:2207.029	ParticleGridMapper: Particle data interpolator
+ascl:2207.030	Analysis of dipole alignment in large-scale distribution of galaxy spin directions
+ascl:2207.031	BANZAI: Beautiful Algorithms to Normalize Zillions of Astronomical Images
+ascl:2207.032	gwdet: Detectability of gravitational-wave signals from compact binary coalescences
+ascl:2207.033	piXedfit: Analyze spatially resolved SEDs of galaxies
+ascl:2207.034	SSHT: Fast spin spherical harmonic transforms
+ascl:2207.035	massmappy: Mapping dark matter on the celestial sphere
+ascl:2208.001	BlaST: Synchrotron peak estimator for blazars
+ascl:2208.002	qrpca: QR-based Principal Components Analysis
+ascl:2208.003	Scatfit: Scattering fits of time domain radio signals (Fast Radio Bursts or pulsars)
+ascl:2208.004	TOM Toolkit: Target and Observation Manager Toolkit
+ascl:2208.005	Asymmetric Uncertainty: Handling nonstandard numerical uncertainties
+ascl:2208.006	ThermoEngine: Thermodynamic properties estimator and phase equilibrium calculator
+ascl:2208.007	VapoRock: Modeling magma ocean atmospheres and stellar nebula
+ascl:2208.008	RJ-plots: Automated objective classification of 2D structures
+ascl:2208.009	LeXInt: Leja Exponential Integrators
+ascl:2208.010	FFD: Flare Frequency Distribution
+ascl:2208.011	POIS: Python Optical Interferometry Simulation
+ascl:2208.012	DELIGHT: Identify host galaxies of transient candidates
+ascl:2208.013	SPAMMS: Spectroscopic PAtch Model for Massive Stars
+ascl:2208.014	uvcombine: Combine images with different resolutions
+ascl:2208.015	J-comb: Combine high-resolution and low-resolution data
+ascl:2208.016	CRPropa3: Simulation framework for propagating extraterrestrial ultra-high energy particles
+ascl:2208.017	HOCHUNK3D: Dust radiative transfer in 3D
+ascl:2208.018	EstrellaNueva: Expected rates of supernova neutrinos calculator
+ascl:2208.019	RadioLensfit: Radio weak lensing shear measurement in the visibility domain
+ascl:2208.020	GStokes: Magnetic field structure and line profiles calculator
+ascl:2208.021	GSSP: Grid Search in Stellar Parameters
+ascl:2208.022	PyNAPLE: Automated pipeline for detecting changes on the lunar surface
+ascl:2208.023	CubeFit: Regularized 3D fitting for spectro-imaging data
+ascl:2208.024	toise: Performance estimator for high-energy neutrino detectors
+ascl:2208.025	Yonder: Data denoising and reconstruction
+ascl:2209.001	A-SLOTH: Semi-analytical model to connect first stars and galaxies to observables
+ascl:2209.002	Herculens: Differentiable gravitational lensing
+ascl:2209.003	DeepMass: Cosmological map inference with deep learning
+ascl:2209.004	Cluster Toolkit: Tools for analyzing galaxy clusters
+ascl:2209.005	SCORE: Shape COnstraint REstoration
+ascl:2209.006	KaRMMa: Curved-sky mass map reconstruction
+ascl:2209.007	AMBER: Fast pipeline for detecting single-pulse radio transients
+ascl:2209.008	PINION: Accelerating radiative transfer simulations for cosmic reionization
+ascl:2209.009	GRUMPY: Galaxy formation with RegUlator Model in PYthon
+ascl:2209.010	HyPhy: Hydrodynamical Physics via Deep Generative Painting
+ascl:2209.011	GaLight: 2D modeling of galaxy images
+ascl:2209.012	URILIGHT: Time-dependent Monte-Carlo radiative-transfer
+ascl:2209.013	wsynphot: Synthetic photometry package using quantities
+ascl:2209.014	SyntheticISOs: Synthetic Population of Interstellar Objects
+ascl:2209.015	TauREx3: Tau Retrieval for Exoplanets
+ascl:2209.016	RAPOC: Rosseland and Planck mean opacities calculator
+ascl:2209.017	SpectraPy: Extract and reduce astronomical spectral data
+ascl:2209.018	libTheSky: Compute positions of celestial bodies and events
+ascl:2209.019	SolTrack: Compute the position of the Sun in topocentric coordinates
+ascl:2209.020	FastQSL: Quasi-separatrix Layers computation method
+ascl:2210.001	PSS: Pulsar Survey Scraper
+ascl:2210.002	SPINspiral: Parameter estimation for analyzing gravitational-wave signals
+ascl:2210.003	NIRDust: Near Infrared Dust finder for Type2 AGN K-band spectra
+ascl:2210.004	Finder_charts: Create finder charts from image data of various sky surveys
+ascl:2210.005	PSFr: Point Spread Function reconstruction
+ascl:2210.006	ExoRad2: Generic point source radiometric model
+ascl:2210.007	COMET: Emulated predictions of large-scale structure observables
+ascl:2210.008	RADTRAN: General purpose planetary radiative transfer model
+ascl:2210.009	NEMESIS: Non-linear optimal estimator for multivariate spectral analysis
+ascl:2210.010	TSRecon: Time series reconstruction method of massive astronomical catalogs
+ascl:2210.011	gbdes: DECam instrumental signature fitting and processing programs
+ascl:2210.012	pixmappy: Python interface to gbdes astrometry solutions
+ascl:2210.013	iharm3D: Hybrid MPI/OpenMP 3D HARM with vectorization
+ascl:2210.014	Blacklight: GR ray tracing code for post-processing Athena++ simulations
+ascl:2210.015	Solar-MACH: Multi-spacecraft longitudinal configuration plotter
+ascl:2210.016	PETSc: Portable, Extensible Toolkit for Scientific Computation
+ascl:2210.017	PySME: Spectroscopy Made Easy reimplemented with Python
+ascl:2210.018	LavAtmos: Gas-melt equilibrium calculations for a given temperature and melt composition
+ascl:2210.019	POSYDON: Single and binary star population synthesis code
+ascl:2210.020	ixpeobssim: Imaging X-ray Polarimetry Explorer simulator and analyzer
+ascl:2210.021	SHEEP: Machine Learning pipeline for astronomy classification
+ascl:2210.022	MCCD: Multi-CCD Point Spread Function Modelling
+ascl:2210.023	BornRaytrace: Weak gravitational lensing effects simulator
+ascl:2210.024	Faiss: Similarity search and clustering of dense vectors library
+ascl:2210.025	tvguide: Observability by TESS
+ascl:2210.026	PGOPHER: Rotational, vibrational, and electronic spectra simulator
+ascl:2210.027	LensingETC: Lensing Exposure Time Calculator
+ascl:2210.028	CK: Cloud modeling and removal
+ascl:2210.029	paltas: Simulation-based inference on strong gravitational lensing systems
+ascl:2210.030	cuvarbase: fast period finding utilities for GPUs
+ascl:2211.001	PTAfast: PTA correlations from stochastic gravitational wave background
+ascl:2211.002	KC: Analytical propagator with collision detection for Keplerian systems
+ascl:2211.003	AMBER: Abundance Matching Box for the Epoch of Reionization
+ascl:2211.004	PAHDecomp: Decomposing the mid-IR spectra of extremely obscured galaxies
+ascl:2211.005	unTimely_Catalog_explorer: A search and visualization tool for the unTimely Catalog
+ascl:2211.006	baobab: Training data generator for hierarchically modeling strong lenses with Bayesian neural networks
+ascl:2211.007	mgcnn: Standard and modified gravity (MG) cosmological models classifier
+ascl:2211.008	pmclib: Population Monte Carlo library
+ascl:2211.009	ovejero: Bayesian neural network inference of strong gravitational lenses
+ascl:2211.010	BlackJAX: Library of samplers for JAX
+ascl:2211.011	fastSHT: Fast Spherical Harmonic Transforms
+ascl:2211.012	gsf: Grism SED Fitting package
+ascl:2211.013	2DFFTUtils: 2DFFT Utilities implementation
+ascl:2211.014	PDFchem: Average abundance of species from Av-PDFs
+ascl:2211.015	H-FISTA: Phase retrieval for pulsar spectroscopy
+ascl:2211.016	Korg: 1D local thermodynamic equilibrium stellar spectral synthesis
+ascl:2211.017	BiGONLight: Bi-local Geodesic Operators framework for Numerical Light propagation
+ascl:2211.018	ODNet: Asteroid occultation detection convolutional neural network
+ascl:2211.019	APERO: A PipelinE to Reduce Observations
+ascl:2211.020	EXCEED-DM: EXtended Calculation of Electronic Excitations for Direct detection of Dark Matter
+ascl:2212.001	GWFAST: Fisher information matrix python package for gravitational-wave detectors
+ascl:2212.002	Eventdisplay: Analysis and reconstruction package for ground-based Gamma-ray astronomy
+ascl:2212.003	MGCosmoPop: Modified gravity and cosmology with binary black holes population models
+ascl:2212.004	FastDF: Integrating neutrino geodesics in linear theory
+ascl:2212.005	MTNeedlet: Spherical maps filtering
+ascl:2212.006	GPry: Bayesian inference of expensive likelihoods with Gaussian processes
+ascl:2212.007	PyMCCF: Python Modernized Cross Correlation Function for reverberation mapping studies
+ascl:2212.008	panco2: Pressure profile measurements of galaxy clusters
+ascl:2212.009	Hazma: Compute indirect detection constraints on sub-GeV dark matter
+ascl:2212.010	sf_deconvolve: PSF deconvolution and analysis
+ascl:2212.011	xwavecal: Wavelength calibrating echelle spectrographs
+ascl:2212.012	BANZAI-NRES: BANZAI data reduction pipeline for NRES
+ascl:2212.013	PACMAN: Planetary Atmosphere, Crust, and MANtle geochemical evolution
+ascl:2212.014	pyTANSPEC: Python tool for extracting 1D TANSPEC spectra from 2D images
+ascl:2212.015	SImMER: Stellar Image Maturation via Efficient Reduction
+ascl:2212.016	AbundanceMatching: Subhalo abundance matching with scatter
+ascl:2212.017	powspec: Power and cross spectral density of 2D arrays
+ascl:2212.018	SourceXtractor++: Extracts sources from astronomical images
+ascl:2212.019	m2mcluster: Star clusters made-to-measure modeling
+ascl:2212.020	Omega: Photon equations of motion
+ascl:2212.021	Infinity: Calculate accretion disk radiation forces onto moving particles
+ascl:2212.022	Elysium: Observing black hole accretion disks
+ascl:2212.023	Tranquillity: Creating black hole spin divergence plots
+ascl:2212.024	Burning Arrow: Black hole massive particles orbit degradation
+ascl:2212.025	CONTROL: Colorado Ultraviolet Transit Experiment data reduction pipeline
+ascl:2212.026	Spender: Neural spectrum encoder and decoder
+ascl:2301.001	CALSAGOS: Select cluster members and search, find, and identify substructures
+ascl:2301.002	Pyxel: Detector and end-to-end instrument simulation
+ascl:2301.003	WF4Py: Gravitational waves waveform models in pure Python language
+ascl:2301.004	HEADSS: HiErArchical Data Splitting and Stitching for non-distributed clustering algorithms
+ascl:2301.005	fitOmatic: Interferometric data modeling
+ascl:2301.006	Self-cal: Optical/IR long-baseline interferometry
+ascl:2301.007	LoLLiPoP: Low-L Likelihood Polarized for Planck
+ascl:2301.008	HiLLiPoP: High-L Likelihood Polarized for Planck
+ascl:2301.009	Xpol: Pseudo-Cl power spectrum estimator
+ascl:2301.010	Fastcc: Broadband radio telescope receiver fast color corrections
+ascl:2301.011	Rosetta: Platform for resource-intensive, interactive data analysis
+ascl:2301.012	XGA: Efficient analysis of XMM observations
+ascl:2301.013	pyExoRaMa: An interactive tool to investigate the radius-mass diagram for exoplanets
+ascl:2301.014	LBL: Line-by-line velocity measurements
+ascl:2301.015	SOAP-GPU: Spectral time series simulations with GPU
+ascl:2301.016	FERRE: Match physical models to measurements
+ascl:2301.017	ReACT: Calculation of non-linear power spectra from non-standard physics
+ascl:2301.018	kderp: Keck Cosmic Web Imager Data Extraction and Reduction Pipeline in IDL
+ascl:2301.019	KCWI_DRP: Keck Cosmic Web Imager Data Reduction Pipeline in Python
+ascl:2301.020	VDA: Void Dwarf Analyzer
+ascl:2301.021	WALDO: Waveform AnomaLy DetectOr
+ascl:2301.022	GalCEM: GALactic Chemical Evolution Model
+ascl:2301.023	PoWR: Potsdam Wolf-Rayet Models
+ascl:2301.024	SOXS: Simulated Observations of X-ray Sources
+ascl:2301.025	desitarget: Selecting DESI targets from photometric catalogs
+ascl:2301.026	MGwave: Detect kinematic moving groups in astronomical data
+ascl:2301.027	Puri-Psi: Radio interferometric imaging
+ascl:2301.028	special: SPEctral Characterization of directly ImAged Low-mass companions
+ascl:2301.029	ALMA3: plAnetary Love nuMbers cAlculator
+ascl:2301.030	HIPP: HIgh-Performance Package for scientific computation
+ascl:2302.001	nicaea: NumerIcal Cosmology And lEnsing cAlculations
+ascl:2302.002	deconfuser: Fast orbit fitting to directly imaged multi-planetary systems
+ascl:2302.003	PHOTOe: Monte Carlo model for simulating the slowing down of photoelectrons
+ascl:2302.004	SFQEDtoolkit: Strong-field QED processes modeling for PIC and Monte Carlo codes
+ascl:2302.005	celmech: Sandbox for celestial mechanics calculations
+ascl:2302.006	RCR: Robust Chauvenet Outlier Rejection
+ascl:2302.007	AnalyticLC: Dynamical modeling of planetary systems
+ascl:2302.008	HawkingNet: Finding Hawking points in the Cosmic Microwave Background
+ascl:2302.009	EXOTIC: EXOplanet Transit Interpretation Code
+ascl:2302.010	SASHIMI-W: Semi-Analytical SubHalo Inference ModelIng for Warm Dark Matter
+ascl:2302.011	UniverseMachine: Empirical model for galaxy formation
+ascl:2302.012	Diffstar: Differentiable star formation histories
+ascl:2302.013	SASHIMI-C: Semi-Analytical SubHalo Inference ModelIng for Cold Dark Matter
+ascl:2302.014	kima: Exoplanet detection in RVs with DNest4 and GPs
+ascl:2302.015	FCFC: C toolkit for computing correlation functions from pair counts
+ascl:2302.016	swyft: Scientific simulation-based inference at scale
+ascl:2302.017	RichValues: Managing numeric values with uncertainties and upper/lower limits
+ascl:2302.018	GCP: Automated GILDAS-CLASS Pipeline
+ascl:2302.019	MADCUBA: MAdrid Data CUBe Analysis
+ascl:2302.020	UBER: Universal Boltzmann Equation Solver
+ascl:2302.021	AMICAL: Aperture Masking Interferometry Calibration and Analysis Library
+ascl:2302.022	RALF: RADEX Line Fitter
+ascl:2302.023	AART: Adaptive Analytical Ray Tracing
+ascl:2302.024	DSPS: Differentiable Stellar Population Synthesis
+ascl:2302.025	Diffmah: Differentiable models of halo and galaxy formation history
+ascl:2302.026	HDMSpectra: Dark Matter Spectra from the electroweak to the Planck scale
+ascl:2303.001	cysgp4: Wrapper for C++ SGP4 satellite library
+ascl:2303.002	line_selections: Automatic line detection for large spectroscopic surveys
+ascl:2303.003	SeeKAT: Localizer for transients detected in tied-array beams
+ascl:2303.004	naif: Frequency analysis package
+ascl:2303.005	Blobby3D: Bayesian inference for gas kinematics
+ascl:2303.006	GPCC: Gaussian process cross-correlation for time delay estimation
+ascl:2303.007	PyCom: Interstellar communication
+ascl:2303.008	nd-redshift: Number Density Redshift Evolution Code
+ascl:2303.009	Pandora: Fast exomoon transit detection algorithm
+ascl:2303.010	spinsfast: Fast and exact spin-s spherical harmonic transforms
+ascl:2303.011	Scri: Manipulate time-dependent functions of spin-weighted spherical harmonics
+ascl:2303.012	EvoEMD: Cosmic Evolution with an Early Matter-Dominated era
+ascl:2303.013	FastJet: Jet finding in pp and e+e collisions
+ascl:2303.014	Delphes: Fast simulation of a generic collider experiment
+ascl:2303.015	SIDM: Density profiles of self-interacting dark-matter halos with inhabitant galaxies
+ascl:2303.016	SatGen: Semi-analytical satellite galaxy and dark matter halo generator
+ascl:2303.017	bajes: Bayesian Jenaer software
+ascl:2303.018	MORPHOFIT: Morphological analysis of galaxies
+ascl:2303.019	pulsar_spectra: Pulsar flux density measurements, spectral models fitting, and catalog
+ascl:2303.020	HaloGraphNet: Predict halo masses from simulations
+ascl:2304.001	ASSIST: Solar system test particles trajectories integrator
+ascl:2304.002	Applefy: Robust detection limits for high-contrast imaging
+ascl:2304.003	BatAnalysis: HEASOFT wrapper for processing Swift-BAT data
+ascl:2304.004	FALCO: Fast Linearized Coronagraph Optimizer in MATLAB
+ascl:2304.005	FALCO: Fast Linearized Coronagraph Optimizer in Python
+ascl:2304.006	JET: JWST Exoplanet Targeting
+ascl:2305.001	FRIDDA: Fisher foRecast code for combIned reDshift Drift and Alpha
+ascl:2305.002	Virtual Telescope: Next-Generation Space Telescope Simulator
+ascl:2305.003	extrapops: Fast simulation and analysis of extra-galactic binary GW sources
+ascl:2305.004	katdal: MeerKAT Data Access Library
+ascl:2305.005	killMS: Direction-dependent radio interferometric calibration package
+ascl:2305.006	QuartiCal: Fast radio interferometric calibration
+ascl:2305.007	Stimela: Containerized radio interferometry scripting framework
+ascl:2305.008	DDFacet: Facet-based radio imaging package
+ascl:2305.009	breizorro: Image masking tool
+ascl:2305.010	FLAGLET: Fast and exact wavelet transform on the ball
+ascl:2305.011	DarkMappy: Mapping the dark universe
+ascl:2305.012	KERN: Radio telescope toolkit
+ascl:2305.013	aartfaac2ms: Aartfaac datasets converter
+ascl:2305.014	DP3: Streaming processing pipeline for radio interferometric data
+ascl:2305.015	EIDOS: Modeling primary beams of radio astronomy antennas
+ascl:2305.016	gw_pta_emulator: Gravitational Waves via Pulsar Timing Arrays
+ascl:2305.017	simple-m2m: Extensions to the standard M2M algorithm for full modeling of observational data
+ascl:2305.018	GWSurrogate: Gravitational wave surrogate models
+ascl:2305.019	sterile-dm: Sterile neutrino production
+ascl:2305.020	JEDI: James's EVE Dimming Index
+ascl:2305.021	COLIBRI: Cosmological libraries in Python
+ascl:2305.022	GrGadget: Evolve metric perturbations in the weak field limit
+ascl:2305.023	GLASS: Cosmological simulations on the sphere
+ascl:2305.024	Nextflow: DSL for data-driven computational pipelines
+ascl:2305.025	CELEBI: Precision localizations and polarimetric data for fast radio bursts
+ascl:2306.001	HAFFET: Supernovae photometric and spectroscopic data analyzer
+ascl:2306.002	sbi: Simulation-based inference toolkit
+ascl:2306.003	SAVED21cm: Global 21cm signal extraction pipeline
+ascl:2306.004	TIDYMESS: TIdal DYnamics of Multi-body ExtraSolar Systems
+ascl:2306.005	Delight: Photometric redshift via Gaussian processes with physical kernels
+ascl:2306.006	Î²-SGP: Scaled Gradient Projection algorithm using Î²-divergence
+ascl:2306.007	PhotoParallax: Data-driven photometric parallaxes built with Gaia and 2MASS
+ascl:2306.008	sstrax: Fast stellar stream modelling in JAX
+ascl:2306.009	Albatross: Stellar stream parameter inference with neural ratio estimation
+ascl:2306.010	MOBSE: Massive Objects in Binary Stellar Evolution
+ascl:2306.011	margarine: Posterior sampling and marginal Bayesian statistics
+ascl:2306.012	ZodiPy: Zodiacal emission simulations in timestreams or HEALPix for solar system observers
+ascl:2306.013	SCONCE-SCMS: Spherical and conic cosmic web finders with extended SCMS algorithms
+ascl:2306.014	AIOLOS: Planetary atmosphere accretion and escape simulations
+ascl:2306.015	Mangrove: Infer galaxy properties using dark matter merger trees
+ascl:2306.016	SuperRad: Black hole superradiance gravitational waveform modeler
+ascl:2306.017	Zeus21: Simulations of 21-cm at cosmic dawn
+ascl:2306.018	FRB: Fast Radio Burst calculations, estimations, and analysis
+ascl:2306.019	realfast: Real-time interferometric data analysis for the VLA
+ascl:2306.020	mockFRBhosts: Limiting the visibility and follow-up of FRB host galaxies
+ascl:2306.021	pipes_vis: Interactive GUI and visualizer tool for SPS spectra
+ascl:2306.022	apollinaire: Helioseismic and asteroseismic peakbagging frameworks
+ascl:2306.023	RELAGN: AGN SEDs with full GR ray tracing
+ascl:2306.024	COpops: Compute CO sizes and fluxes
+ascl:2306.025	ALminer: ALMA archive mining and visualization toolkit
+ascl:2306.026	Parthenon: Portable block-structured adaptive mesh refinement framework
+ascl:2306.027	PEP: Planetary Ephemeris Program
+ascl:2306.028	rfast: Planetary spectral forward and inverse modeling tool
+ascl:2306.029	Mixclask: Mixing Cloudy and SKIRT
+ascl:2306.030	Butterpy: Stellar butterfly diagram and rotational light curve simulator
+ascl:2306.031	ECLIPSE: Efficient Cmb poLarization and Intensity Power Spectra Estimator
+ascl:2306.032	CosmoGraphNet: Cosmological parameters and galaxy power spectrum from galaxy catalogs
+ascl:2306.033	lasso_spectra: Predict properties from galaxy spectra using Lasso regression
+ascl:2306.034	COLT: Monte Carlo radiative transfer and simulation analysis toolkit
+ascl:2306.035	CONCEPT: COsmological N-body CodE in PyThon
+ascl:2306.036	IDEFIX: Astrophysical fluid dynamics
+ascl:2306.037	CADET: X-ray cavity detection tool
+ascl:2306.038	FacetClumps: Molecular clump detection algorithm based on Facet model
+ascl:2306.039	GRChombo: Numerical relativity simulator
+ascl:2306.040	PEPITA: Prediction of Exoplanet Precisions using Information in Transit Analysis
+ascl:2306.041	COFFE: COrrelation Function Full-sky Estimator
+ascl:2306.042	CONDUCT: Electron transport coefficients of magnetized stellar plasmas
+ascl:2306.043	SHERLOCK: Explore Kepler, K2, and TESS data
+ascl:2306.044	nuSpaceSim: Cosmic neutrino simulation
+ascl:2306.045	nuPyProp: Propagate neutrinos through the earth
+ascl:2306.046	CHIPS: Circumstellar matter and light curves of interaction-powered transients simulator
+ascl:2306.047	COLASolver: Particle-Mesh N-body code
+ascl:2306.048	MG-PICOLA: Simulating cosmological structure formation
+ascl:2306.049	ARPACK-NG: Large scale eigenvalue problem solver
+ascl:2306.050	SubgridClumping: Clumping factor for large low-resolution N-body simulations
+ascl:2306.051	Hitomi: Cosmological analysis of anisotropic galaxy distributions
+ascl:2306.052	kilopop: Binary neutron star population of optical kilonovae
+ascl:2306.053	TiDE: Light curves and spectra of tidal disruption events
+ascl:2306.054	threepoint: Covariance of third-order aperture statistics
+ascl:2306.055	ESSENCE: Evaluate spatially correlated noise in interferometric images
+ascl:2306.056	PSFMachine: Toolkit for doing PSF photometry
+ascl:2306.057	pybranch: Calculate experimental branching fractions and transition probabilities from atomic spectra
+ascl:2306.058	GER: Global Extinction Reduction
+ascl:2306.059	BOXFIT: Gamma-ray burst afterglow light curve generator
+ascl:2306.060	SCF-FDPS: Disk-halo systems simulator
+ascl:2307.001	Jdaviz: JWST astronomical data analysis tools in the Jupyter platform
+ascl:2307.002	BE-HaPPY: Bias emulator for halo power spectrum
+ascl:2307.003	RelicFast: Fast scale-dependent halo bias
+ascl:2307.004	ALF: Absorption line fitter
+ascl:2307.005	axionHMcode: Non-linear power spectrum calculator
+ascl:2307.006	pyPplusS: Modeling exoplanets with rings
+ascl:2307.007	AGNvar: Model spectral timing properties in active galactic nuclei
+ascl:2307.008	21cmvFAST: Adding dark matter-baryon relative velocities to 21cmFAST
+ascl:2307.009	pnautilus: Three-phase chemical code
+ascl:2307.010	baccoemu: Cosmological emulators for large-scale structure statistics
+ascl:2307.011	DiscVerSt: Vertical structure calculator for accretion discs around neutron stars and black holes
+ascl:2307.012	mnms: Map-based Noise ModelS
+ascl:2307.013	SIRENA: Energy reconstruction of X-ray photons for Athena X-IFU
+ascl:2307.014	Synthetic LISA: Simulator for LISA-like gravitational-wave observatories
+ascl:2307.015	BOWIE: Gravitational wave binary signal analysis
+ascl:2307.016	DataComb: Combining data for better images
+ascl:2307.017	Veusz: Scientific plotting package
+ascl:2307.018	IMRIpy: Intermediate Mass Ratio Inspirals simulator
+ascl:2307.019	IMRPhenomD: Phenomenological waveform model
+ascl:2307.020	PolyBin: Binned polyspectrum estimation on the full sky
